@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-08",
+  "referenceWords": 2305,
+  "mobileWords": 2413,
+  "lessons": 454,
+  "referenceVerbGrammarCards": 324,
+  "mobileVerbGrammarCards": 332,
+  "referencePatternCards": 135,
+  "mobilePatternCards": 138,
+  "reviewedContextQuestions": 6,
+  "progressAliases": {
+    "b1-adj-regelmaessig": "telc-a1-adv-regelmaessig"
+  },
+  "checks": [
+    "Reference content matches mobile data",
+    "Exam memberships preserved",
+    "Previous IDs retained or explicitly migrated",
+    "Reviewed quiz choices validated"
+  ]
+}

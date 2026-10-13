@@ -1,0 +1,147 @@
+# Original editorial starter packs. CEFR assignments are editorial estimates.
+# These packs support practice; they are not exhaustive exam word lists.
+# term|English|German gloss|German example|English example|grammar
+[A2|daily-life|Everyday routines|Alltag und Gewohnheiten|home]
+der Haushalt|household|Die Aufgaben und Dinge in einer Wohnung.|Wir teilen uns die Arbeit im Haushalt.|We share the household chores.|n:Haushalte
+die Gewohnheit|habit|Etwas, das man regelmäßig macht.|Ein Spaziergang am Abend ist meine Gewohnheit.|An evening walk is my habit.|n:Gewohnheiten
+aufräumen|to tidy up|Dinge an ihren richtigen Platz legen.|Ich räume jeden Samstag mein Zimmer auf.|I tidy my room every Saturday.|v:räume auf;räumst auf;räumt auf
+die Nachbarschaft|neighbourhood|Die Menschen und Häuser in der Nähe.|In unserer Nachbarschaft gibt es einen Park.|There is a park in our neighbourhood.|n:Nachbarschaften
+regelmäßig|regularly|Immer wieder in ähnlichen Abständen.|Ich gehe regelmäßig schwimmen.|I go swimming regularly.|adv
+die Erfahrung|experience|Etwas, das man erlebt und dabei lernt.|Das war eine neue Erfahrung für mich.|That was a new experience for me.|n:Erfahrungen
+die Einladung|invitation|Eine Bitte, zu einer Veranstaltung zu kommen.|Danke für die Einladung zum Abendessen.|Thank you for the invitation to dinner.|n:Einladungen
+sich verabreden|to arrange to meet|Mit jemandem einen Treffpunkt und eine Zeit vereinbaren.|Wir verabreden uns für Samstag.|We arrange to meet on Saturday.|v:verabrede mich;verabredest dich;verabredet sich
+[A2|travel|Getting around|Unterwegs sein|transport]
+umsteigen|to change trains or buses|In ein anderes Verkehrsmittel wechseln.|In Berlin müssen wir umsteigen.|We have to change trains in Berlin.|v:steige um;steigst um;steigt um
+die Verspätung|delay|Die Zeit, um die etwas später kommt.|Der Zug hat zehn Minuten Verspätung.|The train is ten minutes late.|n:Verspätungen
+die Unterkunft|accommodation|Ein Ort, an dem man vorübergehend wohnt.|Wir suchen eine günstige Unterkunft.|We are looking for affordable accommodation.|n:Unterkünfte
+die Verbindung|connection|Eine Möglichkeit, von einem Ort zu einem anderen zu kommen.|Welche Verbindung ist am schnellsten?|Which connection is the fastest?|n:Verbindungen
+die Rückfahrt|return journey|Die Fahrt zurück zum Ausgangsort.|Die Rückfahrt ist am Sonntag.|The return journey is on Sunday.|n:Rückfahrten
+entfernt|away; distant|Mit einem bestimmten Abstand zu einem Ort.|Der Bahnhof ist zwei Kilometer entfernt.|The station is two kilometres away.|adj
+reservieren|to reserve|Etwas für eine spätere Nutzung freihalten lassen.|Ich reserviere einen Sitzplatz.|I reserve a seat.|v:reserviere;reservierst;reserviert
+die Sehenswürdigkeit|sight; attraction|Ein besonderer Ort, den Besucher ansehen.|Wir besuchen die Sehenswürdigkeiten der Stadt.|We visit the city's sights.|n:Sehenswürdigkeiten
+[A2|work|Working life|Arbeitsleben|work]
+die Bewerbung|job application|Unterlagen, mit denen man sich um eine Stelle bemüht.|Ich schicke meine Bewerbung per E-Mail.|I send my application by email.|n:Bewerbungen
+die Ausbildung|vocational training|Eine praktische und theoretische Vorbereitung auf einen Beruf.|Meine Ausbildung dauert drei Jahre.|My vocational training lasts three years.|n:Ausbildungen
+der Lebenslauf|CV; résumé|Eine Übersicht über Ausbildung und berufliche Tätigkeiten.|Bitte schicken Sie uns Ihren Lebenslauf.|Please send us your CV.|n:Lebensläufe
+die Besprechung|meeting|Ein Gespräch über eine gemeinsame Aufgabe.|Die Besprechung beginnt um neun Uhr.|The meeting starts at nine.|n:Besprechungen
+die Schicht|work shift|Ein festgelegter Zeitraum, in dem man arbeitet.|Diese Woche arbeite ich in der frühen Schicht.|This week I work the early shift.|n:Schichten
+verdienen|to earn|Geld für eine Arbeit bekommen.|Sie verdient mit ihrer Arbeit genug Geld.|She earns enough money from her work.|v:verdiene;verdienst;verdient
+zuständig|responsible|Für eine bestimmte Aufgabe verantwortlich.|Wer ist für die Anmeldung zuständig?|Who is responsible for registration?|adj
+die Weiterbildung|further training|Das Lernen zusätzlicher beruflicher Kenntnisse.|Mein Arbeitgeber bezahlt die Weiterbildung.|My employer pays for the further training.|n:Weiterbildungen
+[A2|health|Feeling well|Gesund bleiben|health]
+die Untersuchung|examination|Eine Kontrolle des Körpers durch medizinisches Personal.|Die Untersuchung dauert zwanzig Minuten.|The examination takes twenty minutes.|n:Untersuchungen
+das Rezept|prescription|Eine ärztliche Anweisung für ein Medikament.|Für dieses Medikament brauche ich ein Rezept.|I need a prescription for this medicine.|n:Rezepte
+die Apotheke|pharmacy|Ein Geschäft, in dem man Medikamente bekommt.|Die Apotheke ist neben dem Supermarkt.|The pharmacy is next to the supermarket.|n:Apotheken
+sich erholen|to recover; to rest|Nach Anstrengung oder Krankheit wieder Kraft bekommen.|Am Wochenende erhole ich mich.|I rest at the weekend.|v:erhole mich;erholst dich;erholt sich
+die Erkältung|cold|Eine häufige Krankheit mit Husten oder Schnupfen.|Wegen einer Erkältung bleibe ich zu Hause.|I stay home because of a cold.|n:Erkältungen
+die Versicherung|insurance|Eine Vereinbarung zum Schutz vor bestimmten Kosten.|Meine Versicherung übernimmt die Kosten.|My insurance covers the costs.|n:Versicherungen
+gesund|healthy|Ohne Krankheit und körperlich gut.|Ich möchte gesund bleiben.|I want to stay healthy.|adj
+die Behandlung|treatment|Medizinische Maßnahmen gegen eine Krankheit.|Die Behandlung hilft mir.|The treatment helps me.|n:Behandlungen
+[B1|work|Career & decisions|Beruf und Entscheidungen|work]
+die Voraussetzung|prerequisite|Eine Bedingung, die vorher erfüllt sein muss.|Deutschkenntnisse sind eine Voraussetzung für die Stelle.|German skills are a prerequisite for the position.|n:Voraussetzungen
+die Verantwortung|responsibility|Die Pflicht, für etwas zu sorgen.|Ich übernehme Verantwortung für das Projekt.|I take responsibility for the project.|n:Verantwortungen
+die Gelegenheit|opportunity|Eine günstige Möglichkeit, etwas zu tun.|Nutze die Gelegenheit, Fragen zu stellen.|Take the opportunity to ask questions.|n:Gelegenheiten
+sich entscheiden|to decide|Nach Überlegung eine Möglichkeit auswählen.|Ich entscheide mich für die Ausbildung.|I decide to take the vocational training.|v:entscheide mich;entscheidest dich;entscheidet sich
+die Fähigkeit|ability|Etwas, das jemand gut kann.|Diese Arbeit erfordert die Fähigkeit, gut zuzuhören.|This work requires the ability to listen well.|n:Fähigkeiten
+der Vertrag|contract|Eine verbindliche Vereinbarung zwischen Parteien.|Lesen Sie den Vertrag vor der Unterschrift.|Read the contract before signing.|n:Verträge
+zuverlässig|reliable|So, dass man sich auf jemanden verlassen kann.|Meine Kollegin ist sehr zuverlässig.|My colleague is very reliable.|adj
+die Herausforderung|challenge|Eine schwierige Aufgabe, die Einsatz verlangt.|Der neue Beruf ist eine Herausforderung.|The new profession is a challenge.|n:Herausforderungen
+[B1|community|Life together|Zusammenleben|family]
+die Gemeinschaft|community|Eine Gruppe von Menschen mit etwas Gemeinsamem.|Wir helfen einander in unserer Gemeinschaft.|We help each other in our community.|n:Gemeinschaften
+ehrenamtlich|voluntary; unpaid|Für einen guten Zweck ohne Bezahlung.|Er arbeitet ehrenamtlich im Verein.|He volunteers at the club.|adj
+die Unterstützung|support|Hilfe bei einer Aufgabe oder Schwierigkeit.|Vielen Dank für Ihre Unterstützung.|Thank you very much for your support.|n:Unterstützungen
+sich engagieren|to get involved|Sich aktiv für eine Sache einsetzen.|Viele Menschen engagieren sich für die Nachbarschaft.|Many people get involved in the neighbourhood.|v:engagiere mich;engagierst dich;engagiert sich
+die Gleichberechtigung|equal rights|Gleiche Rechte für verschiedene Menschen.|Gleichberechtigung ist für uns wichtig.|Equal rights are important to us.|n:—
+der Unterschied|difference|Ein Merkmal, durch das Dinge verschieden sind.|Was ist der Unterschied zwischen diesen Angeboten?|What is the difference between these offers?|n:Unterschiede
+der Vorschlag|suggestion|Eine Idee, was man tun könnte.|Dein Vorschlag gefällt mir.|I like your suggestion.|n:Vorschläge
+Rücksicht nehmen|to be considerate|Die Bedürfnisse anderer beachten.|Wir sollten auf unsere Nachbarn Rücksicht nehmen.|We should be considerate of our neighbours.|ex
+[B1|travel|Travel & experiences|Reisen und Erlebnisse|travel]
+die Ermäßigung|discount|Eine Verringerung des normalen Preises.|Studierende bekommen eine Ermäßigung.|Students receive a discount.|n:Ermäßigungen
+die Beschwerde|complaint|Eine Mitteilung über ein Problem oder Unzufriedenheit.|Ich schreibe eine Beschwerde an das Hotel.|I write a complaint to the hotel.|n:Beschwerden
+die Umgebung|surroundings|Das Gebiet in der Nähe eines Ortes.|Die Umgebung des Hotels ist ruhig.|The surroundings of the hotel are quiet.|n:Umgebungen
+sich verlaufen|to get lost on foot|Beim Gehen den richtigen Weg verlieren.|In der Altstadt habe ich mich verlaufen.|I got lost in the old town.|v:verlaufe mich;verläufst dich;verläuft sich
+die Buchung|booking|Eine verbindliche Reservierung.|Ich habe eine Bestätigung meiner Buchung erhalten.|I received confirmation of my booking.|n:Buchungen
+beeindruckend|impressive|So besonders, dass man staunt.|Die Aussicht ist beeindruckend.|The view is impressive.|adj
+die Erstattung|refund|Die Rückzahlung bereits bezahlten Geldes.|Nach der Absage bekomme ich eine Erstattung.|After the cancellation I receive a refund.|n:Erstattungen
+unterwegs|on the way; out and about|Auf einer Reise oder außerhalb der Wohnung.|Wir sind den ganzen Tag unterwegs.|We are out and about all day.|adv
+[B1|communication|Messages & opinions|Nachrichten und Meinungen|letter]
+die Mitteilung|message; notice|Eine kurze Information für andere.|Ich habe eine wichtige Mitteilung für Sie.|I have an important message for you.|n:Mitteilungen
+die Vereinbarung|agreement|Etwas, worauf sich Menschen geeinigt haben.|Wir halten uns an unsere Vereinbarung.|We keep to our agreement.|n:Vereinbarungen
+begründen|to give reasons|Erklären, warum man etwas denkt oder tut.|Bitte begründen Sie Ihre Meinung.|Please give reasons for your opinion.|v:begründe;begründest;begründet
+die Absicht|intention|Ein Plan, den man umsetzen möchte.|Das war nicht meine Absicht.|That was not my intention.|n:Absichten
+missverständlich|ambiguous; misleading|So formuliert, dass man es falsch verstehen kann.|Diese Nachricht ist missverständlich.|This message is ambiguous.|adj
+im Gegensatz zu|in contrast to|Eine Formulierung, die Unterschiede hervorhebt.|Im Gegensatz zu früher fahre ich jetzt mit dem Rad.|In contrast to before, I now travel by bike.|ex
+obwohl|although|Ein Wort, das einen unerwarteten Gegensatz verbindet.|Ich gehe spazieren, obwohl es regnet.|I go for a walk although it is raining.|ex
+die Rückmeldung|feedback; reply|Eine Antwort oder Reaktion auf etwas.|Ich freue mich auf Ihre Rückmeldung.|I look forward to your reply.|n:Rückmeldungen
+[B2|environment|Our changing planet|Umwelt und Wandel|nature]
+die Nachhaltigkeit|sustainability|Ein Umgang mit Ressourcen, der langfristig tragbar ist.|Nachhaltigkeit spielt bei unseren Entscheidungen eine Rolle.|Sustainability plays a role in our decisions.|n:—
+der Klimawandel|climate change|Eine langfristige Veränderung des Klimas.|Der Klimawandel betrifft viele Lebensbereiche.|Climate change affects many areas of life.|n:—
+die Ressource|resource|Ein verfügbarer Rohstoff oder ein nutzbares Mittel.|Wir müssen sparsam mit Ressourcen umgehen.|We must use resources sparingly.|n:Ressourcen
+vermeiden|to avoid|Dafür sorgen, dass etwas nicht geschieht.|Wir versuchen, unnötigen Abfall zu vermeiden.|We try to avoid unnecessary waste.|v:vermeide;vermeidest;vermeidet
+erneuerbar|renewable|So beschaffen, dass es sich auf natürliche Weise erneuert.|Wind ist eine erneuerbare Energiequelle.|Wind is a renewable source of energy.|adj
+die Auswirkung|effect; impact|Eine Folge, die etwas auf etwas anderes hat.|Die Entscheidung hat Auswirkungen auf die Umwelt.|The decision has effects on the environment.|n:Auswirkungen
+der Verbrauch|consumption|Die Menge, die von etwas genutzt wird.|Unser Verbrauch an Strom ist gesunken.|Our electricity consumption has decreased.|n:—
+die Maßnahme|measure; action|Eine gezielte Handlung für ein bestimmtes Ziel.|Diese Maßnahme soll Energie sparen.|This measure is intended to save energy.|n:Maßnahmen
+[B2|society|Society & media|Gesellschaft und Medien|technology]
+die Öffentlichkeit|the public|Die Menschen außerhalb eines privaten Kreises.|Die Öffentlichkeit soll informiert werden.|The public should be informed.|n:—
+die Berichterstattung|news coverage|Das öffentliche Informieren über Ereignisse.|Die Berichterstattung über das Thema ist umfangreich.|The news coverage of the topic is extensive.|n:—
+die Meinungsfreiheit|freedom of expression|Das Recht, eigene Ansichten öffentlich zu äußern.|Meinungsfreiheit ist ein wichtiges Recht.|Freedom of expression is an important right.|n:—
+beeinflussen|to influence|Eine Wirkung auf Gedanken oder Handlungen haben.|Soziale Medien beeinflussen unseren Alltag.|Social media influence our daily lives.|v:beeinflusse;beeinflusst;beeinflusst
+die Glaubwürdigkeit|credibility|Die Eigenschaft, vertrauenswürdig zu erscheinen.|Die Quelle verliert an Glaubwürdigkeit.|The source loses credibility.|n:—
+die Ungleichheit|inequality|Eine ungleiche Verteilung von Chancen oder Mitteln.|Die Studie untersucht soziale Ungleichheit.|The study examines social inequality.|n:Ungleichheiten
+die Wahrnehmung|perception|Die Art, wie jemand etwas erkennt und versteht.|Unsere Wahrnehmung hängt von Erfahrungen ab.|Our perception depends on experiences.|n:Wahrnehmungen
+umstritten|controversial|So, dass es unterschiedliche Meinungen dazu gibt.|Der Vorschlag ist umstritten.|The proposal is controversial.|adj
+[B2|work|The modern workplace|Moderne Arbeitswelt|work]
+die Qualifikation|qualification|Nachgewiesene Kenntnisse für eine Tätigkeit.|Für diese Aufgabe braucht man besondere Qualifikationen.|This task requires special qualifications.|n:Qualifikationen
+die Vereinbarkeit|compatibility; ability to reconcile|Die Möglichkeit, verschiedene Anforderungen zu verbinden.|Die Vereinbarkeit von Beruf und Familie ist wichtig.|Reconciling work and family is important.|n:—
+die Arbeitsbedingung|working condition|Ein Umstand, unter dem Menschen arbeiten.|Gute Arbeitsbedingungen erhöhen die Zufriedenheit.|Good working conditions increase satisfaction.|n:Arbeitsbedingungen
+die Belastung|strain; burden|Etwas, das Kraft oder Aufmerksamkeit beansprucht.|Die hohe Belastung führt zu Stress.|The heavy workload leads to stress.|n:Belastungen
+die Förderung|support; promotion|Eine Hilfe zur Entwicklung oder Verbesserung.|Das Programm dient der Förderung junger Talente.|The programme supports young talent.|n:Förderungen
+bewältigen|to cope with; to manage|Eine schwierige Aufgabe erfolgreich erledigen.|Gemeinsam können wir die Aufgabe bewältigen.|Together we can manage the task.|v:bewältige;bewältigst;bewältigt
+flexibel|flexible|So, dass man sich an Veränderungen anpassen kann.|Unsere Arbeitszeiten sind flexibel.|Our working hours are flexible.|adj
+die Zusammenarbeit|collaboration|Das gemeinsame Arbeiten an einem Ziel.|Die Zusammenarbeit im Team funktioniert gut.|Collaboration in the team works well.|n:—
+[B2|opinions|Build an argument|Argumentieren|idea]
+die Stellungnahme|statement; position|Eine begründete Äußerung zu einer Frage.|Die Autorin veröffentlicht eine Stellungnahme.|The author publishes a statement.|n:Stellungnahmen
+der Zusammenhang|connection; context|Eine Beziehung zwischen Dingen oder Ereignissen.|Es gibt einen Zusammenhang zwischen Schlaf und Konzentration.|There is a connection between sleep and concentration.|n:Zusammenhänge
+die Schlussfolgerung|conclusion|Ein Ergebnis, das man aus Informationen ableitet.|Diese Schlussfolgerung überzeugt mich nicht.|This conclusion does not convince me.|n:Schlussfolgerungen
+abwägen|to weigh up|Verschiedene Möglichkeiten sorgfältig vergleichen.|Wir müssen die Vor- und Nachteile abwägen.|We must weigh up the advantages and disadvantages.|v:wäge ab;wägst ab;wägt ab
+überzeugen|to convince|Jemanden durch Gründe zu einer Ansicht bringen.|Die Beispiele überzeugen mich.|The examples convince me.|v:überzeuge;überzeugst;überzeugt
+einerseits … andererseits|on the one hand … on the other hand|Eine Formulierung für zwei Seiten einer Frage.|Einerseits ist es teuer, andererseits spart es Zeit.|On the one hand it is expensive, on the other it saves time.|ex
+dennoch|nevertheless|Trotz der vorher genannten Situation.|Es regnet; dennoch gehen wir hinaus.|It is raining; nevertheless we go outside.|adv
+die Einschränkung|limitation|Eine Begrenzung dessen, was möglich ist.|Diese Lösung hat einige Einschränkungen.|This solution has some limitations.|n:Einschränkungen
+[C1|academic|Academic thinking|Wissenschaftliches Denken|school]
+die Erkenntnis|insight; finding|Ein durch Denken oder Forschung gewonnenes Wissen.|Die Untersuchung liefert neue Erkenntnisse.|The investigation provides new findings.|n:Erkenntnisse
+die Hypothese|hypothesis|Eine Annahme, die wissenschaftlich geprüft wird.|Die Daten bestätigen die Hypothese nicht.|The data do not confirm the hypothesis.|n:Hypothesen
+die Aussagekraft|explanatory value|Das Maß, in dem etwas verlässliche Informationen liefert.|Die kleine Stichprobe begrenzt die Aussagekraft der Studie.|The small sample limits the explanatory value of the study.|n:—
+nachvollziehen|to understand; to retrace|Einen Gedankengang Schritt für Schritt verstehen.|Ich kann die Argumentation nachvollziehen.|I can follow the reasoning.|v:vollziehe nach;vollziehst nach;vollzieht nach
+differenziert|nuanced|So, dass verschiedene Aspekte genau unterschieden werden.|Das Thema verlangt eine differenzierte Betrachtung.|The topic requires a nuanced examination.|adj
+die Wechselwirkung|interaction|Eine gegenseitige Wirkung zwischen Faktoren.|Die Studie beschreibt die Wechselwirkung dieser Faktoren.|The study describes the interaction of these factors.|n:Wechselwirkungen
+die Methodik|methodology|Die systematische Art eines Vorgehens.|Die Methodik wird im zweiten Kapitel erläutert.|The methodology is explained in the second chapter.|n:Methodiken
+die Stichprobe|sample|Ein ausgewählter Teil einer größeren Gruppe.|Die Stichprobe umfasst zweihundert Personen.|The sample comprises two hundred people.|n:Stichproben
+[C1|policy|Politics & change|Politik und Wandel|checklist]
+die Rahmenbedingung|framework condition|Ein äußerer Umstand, der Handlungsmöglichkeiten bestimmt.|Die wirtschaftlichen Rahmenbedingungen haben sich verändert.|The economic framework conditions have changed.|n:Rahmenbedingungen
+die Gesetzgebung|legislation|Das Verfahren und die Gesamtheit gesetzlicher Regelungen.|Die Gesetzgebung muss neue Entwicklungen berücksichtigen.|Legislation must take new developments into account.|n:—
+die Teilhabe|participation; inclusion|Die Möglichkeit, an gesellschaftlichem Leben mitzuwirken.|Das Projekt stärkt die gesellschaftliche Teilhabe.|The project strengthens participation in society.|n:—
+die Tragweite|significance; far-reaching impact|Das Ausmaß der Folgen einer Entscheidung.|Die Tragweite der Reform ist noch unklar.|The far-reaching impact of the reform is still unclear.|n:—
+gewährleisten|to ensure; to guarantee|Dafür sorgen, dass etwas sicher gegeben ist.|Die Regelung soll faire Verfahren gewährleisten.|The regulation is intended to ensure fair procedures.|v:gewährleiste;gewährleistest;gewährleistet
+die Umsetzung|implementation|Das Überführen eines Plans in die Praxis.|Die Umsetzung erfordert eine gute Zusammenarbeit.|Implementation requires good collaboration.|n:Umsetzungen
+verhältnismäßig|proportionate|In einem angemessenen Verhältnis zu einem Zweck.|Die Maßnahme muss verhältnismäßig sein.|The measure must be proportionate.|adj
+der Interessenkonflikt|conflict of interest|Eine Situation mit unvereinbaren Interessen.|Ein möglicher Interessenkonflikt muss offengelegt werden.|A potential conflict of interest must be disclosed.|n:Interessenkonflikte
+[C1|nuance|Nuance & expression|Nuancen und Ausdruck|idea]
+die Ambivalenz|ambivalence|Das gleichzeitige Bestehen gegensätzlicher Gefühle oder Bewertungen.|Der Text zeigt die Ambivalenz dieser Entscheidung.|The text shows the ambivalence of this decision.|n:Ambivalenzen
+die Diskrepanz|discrepancy|Ein deutlicher Unterschied zwischen zwei Dingen.|Es besteht eine Diskrepanz zwischen Anspruch und Wirklichkeit.|There is a discrepancy between aspiration and reality.|n:Diskrepanzen
+implizit|implicit|Mitgemeint, ohne ausdrücklich gesagt zu werden.|Die Kritik bleibt im Text implizit.|The criticism remains implicit in the text.|adj
+prägnant|concise; striking|Kurz und zugleich klar ausgedrückt.|Sie formuliert ihre These prägnant.|She states her thesis concisely.|adj
+einräumen|to concede|Einen Punkt trotz eigener anderer Haltung anerkennen.|Er räumt ein, dass sein Vorschlag Nachteile hat.|He concedes that his proposal has drawbacks.|v:räume ein;räumst ein;räumt ein
+relativieren|to put into perspective|Eine Aussage in ihrer Geltung einschränken.|Die neuen Daten relativieren die erste Einschätzung.|The new data put the first assessment into perspective.|v:relativiere;relativierst;relativiert
+nicht zuletzt|not least|Eine Formulierung, die einen zusätzlichen wichtigen Grund nennt.|Das Projekt gelingt nicht zuletzt dank des Teams.|The project succeeds not least thanks to the team.|ex
+insofern|in that respect; insofar|Ein Wort, das eine Aussage auf einen Aspekt begrenzt.|Insofern stimme ich Ihrer Analyse zu.|In that respect I agree with your analysis.|adv
+[C1|professional|Professional precision|Präzise im Beruf|work]
+die Zuständigkeit|area of responsibility|Der Bereich, für den jemand verantwortlich ist.|Die Zuständigkeiten sind klar geregelt.|The areas of responsibility are clearly defined.|n:Zuständigkeiten
+die Zielsetzung|objective|Ein angestrebtes Ergebnis eines Vorhabens.|Die Zielsetzung des Projekts ist ambitioniert.|The objective of the project is ambitious.|n:Zielsetzungen
+die Verbindlichkeit|binding nature; commitment|Das Maß, in dem eine Zusage verpflichtend ist.|Die Verbindlichkeit der Vereinbarung steht außer Frage.|The binding nature of the agreement is beyond doubt.|n:Verbindlichkeiten
+die Effizienz|efficiency|Das Verhältnis zwischen Aufwand und Ergebnis.|Die neue Methode erhöht die Effizienz.|The new method increases efficiency.|n:—
+abstimmen|to coordinate|Verschiedene Pläne miteinander in Einklang bringen.|Wir stimmen die nächsten Schritte mit dem Team ab.|We coordinate the next steps with the team.|v:stimme ab;stimmst ab;stimmt ab
+die Handlungsempfehlung|recommended course of action|Ein begründeter Vorschlag für das weitere Vorgehen.|Der Bericht enthält konkrete Handlungsempfehlungen.|The report contains specific recommendations for action.|n:Handlungsempfehlungen
+die Priorisierung|prioritisation|Das Ordnen von Aufgaben nach ihrer Wichtigkeit.|Eine klare Priorisierung erleichtert die Planung.|Clear prioritisation makes planning easier.|n:Priorisierungen
+zielführend|conducive to the goal|So, dass es zum gewünschten Ergebnis beiträgt.|Diese Diskussion ist nicht zielführend.|This discussion does not help us reach our goal.|adj

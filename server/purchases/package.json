@@ -1,0 +1,11 @@
+{
+  "name": "wortgarten-purchase-verification",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": { "start": "node server.mjs", "test": "node --test", "keys": "node generate_keys.mjs" },
+  "dependencies": {
+    "@apple/app-store-server-library": "3.1.0",
+    "google-auth-library": "11.2.0"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-11",
+  "app": "Wortgarten",
+  "package": "com.wortgarten.german_vocabulary",
+  "version": "1.2.5 (16)",
+  "track": "Closed testing - Alpha",
+  "trackUrl": "https://play.google.com/console/u/2/developers/8401429670404300187/app/4973893109028384068/tracks/4698841076162357999",
+  "releaseStatus": "Uploaded and saved as draft; not submitted or live",
+  "testerGroup": "apphive-testers@googlegroups.com",
+  "countries": 178,
+  "access": "Existing free limits and paywall retained; payments disabled; no full-access flag or code change",
+  "saved": [
+    "App creation",
+    "Privacy URL",
+    "No ads",
+    "No advertising ID",
+    "Not a government app",
+    "No financial features",
+    "No health features",
+    "Education category",
+    "Support email",
+    "Store listing text, icon, feature graphic, 3 screenshots, AI brand labels",
+    "All countries",
+    "Tester group and feedback email",
+    "Version 16 release draft and notes",
+    "IARC Terms of Use accepted with explicit approval; partial rating questionnaire saved",
+    "Data safety declaration saved (no collection or sharing for current build)"
+  ],
+  "pending": [
+    "Reviewer access to locked Premium content",
+    "Publish Wortgarten privacy addendum",
+    "Release review and rollout"
+  ],
+  "dataSafetyDraft": "Completed and saved: no user data collected or shared in code 16 with purchase verification disabled",
+  "iapProductsConfigured": false,
+  "iarcTermsAccepted": true,
+  "contentRatingStatus": "Completed by user; Dashboard no longer shows incomplete app setup",
+  "dataSafetyStatus": "Saved; ready to send for review in Publishing overview",
+  "reviewerAccessNote": "Dashboard app setup is now complete after user actions; locked Premium reviewer access has not been reverified"
+}

@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-08",
+  "source": "../german-exam-prep",
+  "referenceWords": 2306,
+  "referenceLessons": 421,
+  "mobileWords": 2414,
+  "mobileLessons": 454,
+  "addedWordIds": 797,
+  "preservedWordIds": 1617,
+  "preservedLessonIds": 185,
+  "collections": [
+    {
+      "level": "A1",
+      "exam": null,
+      "lessons": 44,
+      "uniqueWordIds": 897
+    },
+    {
+      "level": "A1",
+      "exam": "goethe",
+      "lessons": 44,
+      "uniqueWordIds": 827
+    },
+    {
+      "level": "A1",
+      "exam": "telc",
+      "lessons": 42,
+      "uniqueWordIds": 1132
+    },
+    {
+      "level": "A2",
+      "exam": null,
+      "lessons": 58,
+      "uniqueWordIds": 1467
+    },
+    {
+      "level": "A2",
+      "exam": "goethe",
+      "lessons": 53,
+      "uniqueWordIds": 1230
+    },
+    {
+      "level": "A2",
+      "exam": "telc",
+      "lessons": 33,
+      "uniqueWordIds": 640
+    },
+    {
+      "level": "B1",
+      "exam": null,
+      "lessons": 60,
+      "uniqueWordIds": 1532
+    },
+    {
+      "level": "B1",
+      "exam": "goethe",
+      "lessons": 58,
+      "uniqueWordIds": 1335
+    },
+    {
+      "level": "B1",
+      "exam": "telc",
+      "lessons": 38,
+      "uniqueWordIds": 388
+    },
+    {
+      "level": "B2",
+      "exam": null,
+      "lessons": 4,
+      "uniqueWordIds": 32
+    },
+    {
+      "level": "B2",
+      "exam": "goethe",
+      "lessons": 4,
+      "uniqueWordIds": 32
+    },
+    {
+      "level": "B2",
+      "exam": "telc",
+      "lessons": 4,
+      "uniqueWordIds": 32
+    },
+    {
+      "level": "C1",
+      "exam": null,
+      "lessons": 4,
+      "uniqueWordIds": 32
+    },
+    {
+      "level": "C1",
+      "exam": "goethe",
+      "lessons": 4,
+      "uniqueWordIds": 32
+    },
+    {
+      "level": "C1",
+      "exam": "telc",
+      "lessons": 4,
+      "uniqueWordIds": 32
+    }
+  ]
+}

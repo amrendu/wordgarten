@@ -1,0 +1,67 @@
+{
+  "importedAt": "2026-10-10T11:54:37.474Z",
+  "source": "../german-exam-prep",
+  "referenceWords": 3196,
+  "referenceLessons": 538,
+  "mobileWords": 3284,
+  "mobileLessons": 565,
+  "newWordIds": 871,
+  "newLessonIds": 111,
+  "existingWordIdsPreserved": 2413,
+  "existingLessonIdsPreserved": 454,
+  "media": {
+    "wordImages": 3196,
+    "customWordImages": 1666,
+    "topicImages": 27,
+    "termAudio": 2494,
+    "exampleAudio": 2495,
+    "cardAudio": 2494
+  },
+  "mediaBytes": 334194983,
+  "skippedIncompleteMedia": [
+    {
+      "kind": "unfinished-audio",
+      "wordId": "a1-n-die-frage",
+      "audioKind": "term"
+    }
+  ],
+  "allReferenceContentMatches": true,
+  "examMembershipsMatch": true,
+  "existingProgressSchemaUnchanged": true,
+  "generalCollections": {
+    "A1": {
+      "lessons": 44,
+      "words": 897
+    },
+    "A2": {
+      "lessons": 58,
+      "words": 1470
+    },
+    "B1": {
+      "lessons": 60,
+      "words": 1532
+    },
+    "B2": {
+      "lessons": 29,
+      "words": 688
+    },
+    "C1": {
+      "lessons": 22,
+      "words": 390
+    }
+  },
+  "validation": {
+    "flutterAnalyze": "passed",
+    "unitAndWidgetTests": 40,
+    "iosNativeMp3Playback": "term, example, full card and cancellation passed",
+    "browserQa": "topic/word images, MP3 review completion, pause and progress resume passed",
+    "builds": [
+      "Android debug APK",
+      "iOS simulator app",
+      "Flutter web"
+    ],
+    "allImportedMediaPackagedOnAndroidAndIos": 10706,
+    "androidDebugApkBytes": 503275682,
+    "androidPhoneConnectedAtBuild": false
+  }
+}

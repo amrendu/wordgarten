@@ -1,0 +1,38 @@
+{
+  "importedAt": "2026-10-11T06:00:18.402Z",
+  "source": "../german-exam-prep",
+  "referenceWords": 3196,
+  "mobileWords": 3284,
+  "mobileLessons": 565,
+  "existingWordAndLessonIdsPreserved": true,
+  "vocabularyTextUnchanged": true,
+  "lessonMembershipsUnchanged": true,
+  "newCustomImages": 362,
+  "newMp3Files": 0,
+  "media": {
+    "wordImages": 3196,
+    "customWordImages": 2603,
+    "topicImages": 27,
+    "termAudio": 3179,
+    "exampleAudio": 3180,
+    "cardAudio": 3180
+  },
+  "mediaBytes": 448806325,
+  "privateSourceImagesVerified": 2603,
+  "retainedAudioVerified": 9539,
+  "missingMedia": [],
+  "validation": {
+    "importerTests": 16,
+    "flutterTests": 60,
+    "newC1ImageDecoding": "passed",
+    "flutterAnalyze": "passed",
+    "androidVersion": "1.2.3+13",
+    "androidReleaseApkBytes": 478983172,
+    "allImportedMediaPackaged": 12762,
+    "privateOriginalCacheNotBundled": true,
+    "androidInstall": "adb install -r succeeded; version 1.2.3 confirmed",
+    "androidStartup": "process running; no Flutter startup errors detected",
+    "iosSimulatorBuild": "passed",
+    "iosMediaFilesVerified": 12762
+  }
+}

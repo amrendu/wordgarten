@@ -1,0 +1,50 @@
+{
+  "version": "1.2.0+10",
+  "freeGeneralA1Words": 897,
+  "freeSampleTopics": {
+    "A2": {
+      "id": "a2-plans-and-invitations",
+      "title": "Plans and invitations",
+      "words": 23
+    },
+    "B1": {
+      "id": "b1-planning-together",
+      "title": "Planning together",
+      "words": 19
+    },
+    "B2": {
+      "id": "b2-arguing-a-point",
+      "title": "Arguing a point",
+      "words": 32
+    },
+    "C1": {
+      "id": "c1-nuanced-argument",
+      "title": "Nuanced argumentation",
+      "words": 23
+    }
+  },
+  "totalFreeWordIds": 980,
+  "pricesEuro": {
+    "weekly": 4.9,
+    "monthly": 9.99,
+    "lifetime": 99.0
+  },
+  "storePaymentsConfigured": false,
+  "verificationService": "server/purchases",
+  "validation": {
+    "flutterAnalyze": "passed",
+    "flutterTests": 57,
+    "serverVerificationTests": 9,
+    "builds": [
+      "Android debug APK",
+      "iOS simulator app",
+      "Flutter web"
+    ],
+    "browser": "full onboarding, free exit, persisted recall, artwork, MP3 review and image preview passed",
+    "nativeIosOnboardingAndPurchasePlugin": "passed",
+    "startupPurchaseRecovery": "passed"
+  },
+  "preview": "output/screenshots/onboarding-preview.png",
+  "phoneConnected": false,
+  "splashMotionPreview": "output/screenshots/splash-animation.gif"
+}

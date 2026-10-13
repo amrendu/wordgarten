@@ -1,0 +1,54 @@
+name: german_vocabulary
+description: An illustrated, offline German vocabulary companion for A1–C1.
+publish_to: none
+version: 1.3.0+17
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.3.0
+  flutter_tts: ^4.2.5
+  audioplayers: ^6.8.1
+  in_app_purchase: ^3.3.1
+  cryptography: ^2.9.0
+  http: ^1.6.0
+  url_launcher: ^6.3.2
+  sqflite: ^2.4.2
+  shared_preferences: ^2.5.5
+  path: ^1.9.1
+  flutter_local_notifications: ^21.0.0
+  flutter_timezone: ^5.0.1
+  timezone: ^0.11.1
+  purchases_flutter: ^10.15.2
+
+dev_dependencies:
+  integration_test:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/catalog.json
+    - assets/artwork/
+    - assets/generated/
+    - assets/brand/wortgarten-v1.png
+    - assets/media/words/
+    - assets/media/topics/
+    - assets/media/audio/
+  fonts:
+    - family: Geist
+      fonts:
+        - asset: assets/fonts/Geist-Regular.ttf
+        - asset: assets/fonts/Geist-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Geist-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Geist-Bold.ttf
+          weight: 700

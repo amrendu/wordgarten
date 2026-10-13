@@ -1,0 +1,1499 @@
+{
+  "checkedAt": "2026-10-13",
+  "source": "/Users/amrendu/Downloads/deutsch-pruefung-vocabulary-backup-2026-10-13/assets/protected",
+  "brokenReferencedFiles": [],
+  "copied": [
+    {
+      "wordId": "a2-v-umsteigen",
+      "kind": "term",
+      "sourceWordId": "telc-a1-v-umsteigen",
+      "source": "/Users/amrendu/Downloads/deutsch-pruefung-vocabulary-backup-2026-10-13/assets/protected/audio/vocabulary/a1/telc-a1-v-umsteigen.63205efb2fc1.mp3",
+      "destination": "assets/media/audio/a2-v-umsteigen.mp3",
+      "bytes": 11981,
+      "sha256": "63205efb2fc1110f9369057e05ccafe2e5a81ee222870d32fc9b17f7483323f4",
+      "matchingFields": [
+        "term",
+        "part",
+        "sense"
+      ]
+    }
+  ],
+  "remainingMissingByKind": {
+    "term": 67,
+    "example": 67,
+    "card": 67,
+    "image": 44
+  },
+  "remainingMissing": [
+    {
+      "wordId": "a1-n-die-frage",
+      "term": "die Frage",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "vereinbaren",
+      "term": "vereinbaren",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "vereinbaren",
+      "term": "vereinbaren",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "vereinbaren",
+      "term": "vereinbaren",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "verschieben",
+      "term": "verschieben",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "verschieben",
+      "term": "verschieben",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "verschieben",
+      "term": "verschieben",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "vorschlag",
+      "term": "der Vorschlag",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "vorschlag",
+      "term": "der Vorschlag",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "vorschlag",
+      "term": "der Vorschlag",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "teilnehmen",
+      "term": "teilnehmen",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "teilnehmen",
+      "term": "teilnehmen",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "teilnehmen",
+      "term": "teilnehmen",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "nachricht",
+      "term": "die Nachricht",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "nachricht",
+      "term": "die Nachricht",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "nachricht",
+      "term": "die Nachricht",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "bewerbung",
+      "term": "die Bewerbung",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "bewerbung",
+      "term": "die Bewerbung",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "bewerbung",
+      "term": "die Bewerbung",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "erfahrung",
+      "term": "die Erfahrung",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "erfahrung",
+      "term": "die Erfahrung",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "erfahrung",
+      "term": "die Erfahrung",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "zuverlaessig",
+      "term": "zuverlässig",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "zuverlaessig",
+      "term": "zuverlässig",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "zuverlaessig",
+      "term": "zuverlässig",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "erledigen",
+      "term": "erledigen",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "erledigen",
+      "term": "erledigen",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "erledigen",
+      "term": "erledigen",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "meinung",
+      "term": "die Meinung",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "meinung",
+      "term": "die Meinung",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "meinung",
+      "term": "die Meinung",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "begruenden",
+      "term": "begründen",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "begruenden",
+      "term": "begründen",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "begruenden",
+      "term": "begründen",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "vorteil",
+      "term": "der Vorteil",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "vorteil",
+      "term": "der Vorteil",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "vorteil",
+      "term": "der Vorteil",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "nachteil",
+      "term": "der Nachteil",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "nachteil",
+      "term": "der Nachteil",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "nachteil",
+      "term": "der Nachteil",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "zustimmen",
+      "term": "zustimmen",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "zustimmen",
+      "term": "zustimmen",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "zustimmen",
+      "term": "zustimmen",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "ueberzeugen",
+      "term": "überzeugen",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "ueberzeugen",
+      "term": "überzeugen",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "ueberzeugen",
+      "term": "überzeugen",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "rueckmeldung",
+      "term": "die Rückmeldung",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "rueckmeldung",
+      "term": "die Rückmeldung",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "rueckmeldung",
+      "term": "die Rückmeldung",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-n-die-nachbarschaft",
+      "term": "die Nachbarschaft",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-n-die-nachbarschaft",
+      "term": "die Nachbarschaft",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-n-die-nachbarschaft",
+      "term": "die Nachbarschaft",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-n-die-nachbarschaft",
+      "term": "die Nachbarschaft",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-adv-regelmaessig",
+      "term": "regelmäßig",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-adv-regelmaessig",
+      "term": "regelmäßig",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-adv-regelmaessig",
+      "term": "regelmäßig",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-adv-regelmaessig",
+      "term": "regelmäßig",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-n-die-erfahrung",
+      "term": "die Erfahrung",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-n-die-erfahrung",
+      "term": "die Erfahrung",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-n-die-erfahrung",
+      "term": "die Erfahrung",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-v-sich-verabreden",
+      "term": "sich verabreden",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-v-sich-verabreden",
+      "term": "sich verabreden",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-v-sich-verabreden",
+      "term": "sich verabreden",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-v-sich-verabreden",
+      "term": "sich verabreden",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-v-umsteigen",
+      "term": "umsteigen",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-v-umsteigen",
+      "term": "umsteigen",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-v-umsteigen",
+      "term": "umsteigen",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-adj-entfernt",
+      "term": "entfernt",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-adj-entfernt",
+      "term": "entfernt",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-adj-entfernt",
+      "term": "entfernt",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-adj-entfernt",
+      "term": "entfernt",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-n-die-bewerbung",
+      "term": "die Bewerbung",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-n-die-bewerbung",
+      "term": "die Bewerbung",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "a2-n-die-bewerbung",
+      "term": "die Bewerbung",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-adj-zuverlaessig",
+      "term": "zuverlässig",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-adj-zuverlaessig",
+      "term": "zuverlässig",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-adj-zuverlaessig",
+      "term": "zuverlässig",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-n-der-vorschlag",
+      "term": "der Vorschlag",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-n-der-vorschlag",
+      "term": "der Vorschlag",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-n-der-vorschlag",
+      "term": "der Vorschlag",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-ex-ruecksicht-nehmen",
+      "term": "Rücksicht nehmen",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-ex-ruecksicht-nehmen",
+      "term": "Rücksicht nehmen",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-ex-ruecksicht-nehmen",
+      "term": "Rücksicht nehmen",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-ex-ruecksicht-nehmen",
+      "term": "Rücksicht nehmen",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-v-sich-verlaufen",
+      "term": "sich verlaufen",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-v-sich-verlaufen",
+      "term": "sich verlaufen",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-v-sich-verlaufen",
+      "term": "sich verlaufen",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-v-sich-verlaufen",
+      "term": "sich verlaufen",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-n-die-buchung",
+      "term": "die Buchung",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-n-die-buchung",
+      "term": "die Buchung",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-n-die-buchung",
+      "term": "die Buchung",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-n-die-buchung",
+      "term": "die Buchung",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-adj-beeindruckend",
+      "term": "beeindruckend",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-adj-beeindruckend",
+      "term": "beeindruckend",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-adj-beeindruckend",
+      "term": "beeindruckend",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-adj-beeindruckend",
+      "term": "beeindruckend",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-adv-unterwegs",
+      "term": "unterwegs",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-adv-unterwegs",
+      "term": "unterwegs",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-adv-unterwegs",
+      "term": "unterwegs",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-adv-unterwegs",
+      "term": "unterwegs",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-n-die-vereinbarung",
+      "term": "die Vereinbarung",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-n-die-vereinbarung",
+      "term": "die Vereinbarung",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-n-die-vereinbarung",
+      "term": "die Vereinbarung",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-n-die-vereinbarung",
+      "term": "die Vereinbarung",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-v-begruenden",
+      "term": "begründen",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-v-begruenden",
+      "term": "begründen",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-v-begruenden",
+      "term": "begründen",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-adj-missverstaendlich",
+      "term": "missverständlich",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-adj-missverstaendlich",
+      "term": "missverständlich",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-adj-missverstaendlich",
+      "term": "missverständlich",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-adj-missverstaendlich",
+      "term": "missverständlich",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-ex-im-gegensatz-zu",
+      "term": "im Gegensatz zu",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-ex-im-gegensatz-zu",
+      "term": "im Gegensatz zu",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-ex-im-gegensatz-zu",
+      "term": "im Gegensatz zu",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-ex-im-gegensatz-zu",
+      "term": "im Gegensatz zu",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-ex-obwohl",
+      "term": "obwohl",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-ex-obwohl",
+      "term": "obwohl",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-ex-obwohl",
+      "term": "obwohl",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-ex-obwohl",
+      "term": "obwohl",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-n-die-rueckmeldung",
+      "term": "die Rückmeldung",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-n-die-rueckmeldung",
+      "term": "die Rückmeldung",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b1-n-die-rueckmeldung",
+      "term": "die Rückmeldung",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-adj-erneuerbar",
+      "term": "erneuerbar",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-adj-erneuerbar",
+      "term": "erneuerbar",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-adj-erneuerbar",
+      "term": "erneuerbar",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-adj-erneuerbar",
+      "term": "erneuerbar",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-massnahme",
+      "term": "die Maßnahme",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-massnahme",
+      "term": "die Maßnahme",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-massnahme",
+      "term": "die Maßnahme",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-massnahme",
+      "term": "die Maßnahme",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-ungleichheit",
+      "term": "die Ungleichheit",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-ungleichheit",
+      "term": "die Ungleichheit",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-ungleichheit",
+      "term": "die Ungleichheit",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-ungleichheit",
+      "term": "die Ungleichheit",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-wahrnehmung",
+      "term": "die Wahrnehmung",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-wahrnehmung",
+      "term": "die Wahrnehmung",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-wahrnehmung",
+      "term": "die Wahrnehmung",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-wahrnehmung",
+      "term": "die Wahrnehmung",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-arbeitsbedingung",
+      "term": "die Arbeitsbedingung",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-arbeitsbedingung",
+      "term": "die Arbeitsbedingung",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-arbeitsbedingung",
+      "term": "die Arbeitsbedingung",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-arbeitsbedingung",
+      "term": "die Arbeitsbedingung",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-v-bewaeltigen",
+      "term": "bewältigen",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-v-bewaeltigen",
+      "term": "bewältigen",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-v-bewaeltigen",
+      "term": "bewältigen",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-v-bewaeltigen",
+      "term": "bewältigen",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-v-ueberzeugen",
+      "term": "überzeugen",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-v-ueberzeugen",
+      "term": "überzeugen",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-v-ueberzeugen",
+      "term": "überzeugen",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-ex-einerseits-andererseits",
+      "term": "einerseits … andererseits",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-ex-einerseits-andererseits",
+      "term": "einerseits … andererseits",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-ex-einerseits-andererseits",
+      "term": "einerseits … andererseits",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-ex-einerseits-andererseits",
+      "term": "einerseits … andererseits",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-einschraenkung",
+      "term": "die Einschränkung",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-einschraenkung",
+      "term": "die Einschränkung",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-einschraenkung",
+      "term": "die Einschränkung",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "b2-n-die-einschraenkung",
+      "term": "die Einschränkung",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-erkenntnis",
+      "term": "die Erkenntnis",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-erkenntnis",
+      "term": "die Erkenntnis",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-erkenntnis",
+      "term": "die Erkenntnis",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-erkenntnis",
+      "term": "die Erkenntnis",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-hypothese",
+      "term": "die Hypothese",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-hypothese",
+      "term": "die Hypothese",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-hypothese",
+      "term": "die Hypothese",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-hypothese",
+      "term": "die Hypothese",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-aussagekraft",
+      "term": "die Aussagekraft",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-aussagekraft",
+      "term": "die Aussagekraft",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-aussagekraft",
+      "term": "die Aussagekraft",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-aussagekraft",
+      "term": "die Aussagekraft",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-methodik",
+      "term": "die Methodik",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-methodik",
+      "term": "die Methodik",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-methodik",
+      "term": "die Methodik",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-methodik",
+      "term": "die Methodik",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-rahmenbedingung",
+      "term": "die Rahmenbedingung",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-rahmenbedingung",
+      "term": "die Rahmenbedingung",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-rahmenbedingung",
+      "term": "die Rahmenbedingung",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-rahmenbedingung",
+      "term": "die Rahmenbedingung",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-teilhabe",
+      "term": "die Teilhabe",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-teilhabe",
+      "term": "die Teilhabe",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-teilhabe",
+      "term": "die Teilhabe",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-teilhabe",
+      "term": "die Teilhabe",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-tragweite",
+      "term": "die Tragweite",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-tragweite",
+      "term": "die Tragweite",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-tragweite",
+      "term": "die Tragweite",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-tragweite",
+      "term": "die Tragweite",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-v-gewaehrleisten",
+      "term": "gewährleisten",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-v-gewaehrleisten",
+      "term": "gewährleisten",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-v-gewaehrleisten",
+      "term": "gewährleisten",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-v-gewaehrleisten",
+      "term": "gewährleisten",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-umsetzung",
+      "term": "die Umsetzung",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-umsetzung",
+      "term": "die Umsetzung",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-umsetzung",
+      "term": "die Umsetzung",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-umsetzung",
+      "term": "die Umsetzung",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-adj-verhaeltnismaessig",
+      "term": "verhältnismäßig",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-adj-verhaeltnismaessig",
+      "term": "verhältnismäßig",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-adj-verhaeltnismaessig",
+      "term": "verhältnismäßig",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-adj-verhaeltnismaessig",
+      "term": "verhältnismäßig",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-der-interessenkonflikt",
+      "term": "der Interessenkonflikt",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-der-interessenkonflikt",
+      "term": "der Interessenkonflikt",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-der-interessenkonflikt",
+      "term": "der Interessenkonflikt",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-der-interessenkonflikt",
+      "term": "der Interessenkonflikt",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-ambivalenz",
+      "term": "die Ambivalenz",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-ambivalenz",
+      "term": "die Ambivalenz",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-ambivalenz",
+      "term": "die Ambivalenz",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-ambivalenz",
+      "term": "die Ambivalenz",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-diskrepanz",
+      "term": "die Diskrepanz",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-diskrepanz",
+      "term": "die Diskrepanz",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-diskrepanz",
+      "term": "die Diskrepanz",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-diskrepanz",
+      "term": "die Diskrepanz",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-adj-implizit",
+      "term": "implizit",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-adj-implizit",
+      "term": "implizit",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-adj-implizit",
+      "term": "implizit",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-adj-implizit",
+      "term": "implizit",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-adj-praegnant",
+      "term": "prägnant",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-adj-praegnant",
+      "term": "prägnant",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-adj-praegnant",
+      "term": "prägnant",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-adj-praegnant",
+      "term": "prägnant",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-v-relativieren",
+      "term": "relativieren",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-v-relativieren",
+      "term": "relativieren",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-v-relativieren",
+      "term": "relativieren",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-v-relativieren",
+      "term": "relativieren",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-zielsetzung",
+      "term": "die Zielsetzung",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-zielsetzung",
+      "term": "die Zielsetzung",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-zielsetzung",
+      "term": "die Zielsetzung",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-zielsetzung",
+      "term": "die Zielsetzung",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-verbindlichkeit",
+      "term": "die Verbindlichkeit",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-verbindlichkeit",
+      "term": "die Verbindlichkeit",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-verbindlichkeit",
+      "term": "die Verbindlichkeit",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-verbindlichkeit",
+      "term": "die Verbindlichkeit",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-effizienz",
+      "term": "die Effizienz",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-effizienz",
+      "term": "die Effizienz",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-effizienz",
+      "term": "die Effizienz",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-effizienz",
+      "term": "die Effizienz",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-handlungsempfehlung",
+      "term": "die Handlungsempfehlung",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-handlungsempfehlung",
+      "term": "die Handlungsempfehlung",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-handlungsempfehlung",
+      "term": "die Handlungsempfehlung",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-handlungsempfehlung",
+      "term": "die Handlungsempfehlung",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-priorisierung",
+      "term": "die Priorisierung",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-priorisierung",
+      "term": "die Priorisierung",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-priorisierung",
+      "term": "die Priorisierung",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-n-die-priorisierung",
+      "term": "die Priorisierung",
+      "kind": "card",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-adj-zielfuehrend",
+      "term": "zielführend",
+      "kind": "image",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-adj-zielfuehrend",
+      "term": "zielführend",
+      "kind": "term",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-adj-zielfuehrend",
+      "term": "zielführend",
+      "kind": "example",
+      "presentInBackup": false
+    },
+    {
+      "wordId": "c1-adj-zielfuehrend",
+      "term": "zielführend",
+      "kind": "card",
+      "presentInBackup": false
+    }
+  ]
+}

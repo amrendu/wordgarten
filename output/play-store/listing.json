@@ -1,0 +1,26 @@
+{
+  "appName": "Wortgarten",
+  "defaultLanguage": "en-US",
+  "category": "Education",
+  "freeToDownload": true,
+  "packageName": "com.wortgarten.german_vocabulary",
+  "shortDescription": "Grow your German vocabulary from A1 to C1 with pictures and audio.",
+  "fullDescription": "Little words. Lasting roots.\n\nWortgarten helps you build your German vocabulary, one word at a time. Explore A1 to C1 vocabulary by level, everyday topic, and Goethe or telc exam collection.\n\nLearn with pictures, German definitions, English meanings, example sentences, grammar guidance, and recorded audio. Practise with review cards, flashcards, spelling, quizzes, and word-form exercises. Bookmark useful words, set a daily goal, and follow your learning progress.\n\nVocabulary, illustrations and recorded audio are bundled for offline study. Learning progress is stored locally on your device. No app account is required.\n\nThe free version includes general A1 practice and sample topics at higher levels. Other collections require Premium access. Premium purchases are not enabled in this initial closed-test build.\n\nWortgarten is an independent vocabulary-learning app and is not affiliated with Goethe-Institut or telc.",
+  "releaseName": "1.2.5 \u2013 Closed test 1",
+  "releaseNotes": "Initial closed test of Wortgarten. Browse vocabulary by level, topic and exam; practise available free content with pictures and audio; save bookmarks and learning progress. Includes the animated garden splash. Premium purchases are not enabled in this build.",
+  "supportEmail": "support@deutsch-pruefung.de",
+  "privacyPolicyUrl": "https://deutsch-pruefung.de/privacy",
+  "testerEmails": [],
+  "countries": "all available countries",
+  "artifacts": {
+    "bundle": "/Users/amrendu/vibe/german-vocabulary/build/app/outputs/bundle/release/app-release.aab",
+    "icon": "/Users/amrendu/vibe/german-vocabulary/output/play-store/app-icon-512.png",
+    "featureGraphic": "/Users/amrendu/vibe/german-vocabulary/output/play-store/feature-graphic-1024x500.png",
+    "screenshots": [
+      "/Users/amrendu/vibe/german-vocabulary/output/play-store/01-home.png",
+      "/Users/amrendu/vibe/german-vocabulary/output/play-store/02-flashcards.png",
+      "/Users/amrendu/vibe/german-vocabulary/output/play-store/03-word-details.png"
+    ]
+  },
+  "testerGoogleGroup": "apphive-testers@googlegroups.com"
+}

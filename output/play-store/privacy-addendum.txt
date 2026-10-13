@@ -1,0 +1,9 @@
+Wortgarten mobile application
+
+Wortgarten is our German vocabulary app for Android and iOS. You can use it without an app account. Learning progress, bookmarks, preferences and study reminders are stored locally on your device. Device or cloud backups may be managed by your operating system according to your backup settings.
+
+The current closed-test build has no advertising, Firebase Analytics, Firebase Crashlytics or remote push-notification service. The advertising and Firebase descriptions elsewhere in this policy apply to our other apps, not this Wortgarten build. Optional study reminders are scheduled locally with your permission. Vocabulary, illustrations and recorded audio are bundled in the app. Pronunciation fallback uses your device's text-to-speech service, whose voice downloads and network behavior depend on your device and provider.
+
+Premium purchases are disabled in this closed-test build. Before enabling purchases, we will describe the purchase-verification data flows in this notice.
+
+To remove local learning data, clear the app's data in device settings or uninstall it. For privacy questions, contact support@deutsch-pruefung.de. The Service's existing minimum-age statement applies.

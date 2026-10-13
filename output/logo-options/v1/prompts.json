@@ -1,0 +1,19 @@
+{
+  "tool": "built-in image_gen",
+  "useCase": "logo-brand",
+  "status": "concepts for selection",
+  "concepts": [
+    {
+      "option": 1,
+      "title": "Sprouting dictionary",
+      "filename": "logo-1-sprouting-dictionary.png",
+      "prompt": "Use case: logo-brand.\nAsset type: a polished mobile app icon and compact logo symbol for Wortgarten, a German vocabulary learning app with a garden theme.\nPrimary request: Concept 1, a sprouting dictionary. Create ONE standalone square app icon, centered and clearly legible at small sizes.\nSubject: a bold warm-ivory open vocabulary book, with a fresh two-leaf green sprout emerging naturally from its central spine. The left book page carries one large elegant capital German letter \"Ä\", exactly A with two distinct umlaut dots above it. A small vertical bookmark on the right page uses three clearly ordered bands of black, red and gold, suggesting the German flag. Unite the book and leaves into one cohesive memorable silhouette.\nStyle: refined flat vector-like brand illustration, simple substantial shapes, careful optical balance, smooth clean edges, restrained detail, charming but professional. The main book should be bright ivory against a full-bleed muted forest-green square background, based on #477357. Leaves use a lighter sage green; gold is a small accent. No photorealism, no 3D plastic, no glossy effects or heavy shadows.\nComposition: single centered symbol occupying roughly 72 percent of the canvas, generous safe margin for Android/iOS icon masks. Background reaches all four edges and corners. Do not pre-round the outer square. No surrounding mockup, border, phone, caption, watermark or wordmark. The only text is the single letter \"Ä\", no other lettering.\nMake it immediately read as language learning plus growth/garden, with the German detail visible without dominating."
+    },
+    {
+      "option": 2,
+      "title": "Leafy speech bubble",
+      "filename": "logo-2-leafy-speech.png",
+      "prompt": "Use case: logo-brand.\nAsset type: a polished mobile app icon and compact logo symbol for Wortgarten, a German vocabulary learning app with a garden theme.\nPrimary request: Concept 2, a word growing into a plant. Create ONE standalone square app icon, visually distinct from a book-based logo.\nSubject: a bold warm-ivory speech bubble containing a large dark-green capital German letter \"Ä\", exactly A with two distinct umlaut dots. The speech bubble's lower tail flows elegantly into a short plant stem; two broad sage-green leaves grow from this stem, forming one unified speech-and-garden symbol. Integrate a small, clearly visible black-red-gold German tricolor accent as three horizontal rounded stripes along the lower edge of the speech bubble. Keep the silhouette uncomplicated and expressive.\nStyle: premium minimalist flat vector-like logo with rounded organic geometry, strong readability at 48 pixels, crisp edges and carefully balanced proportions. Warm-ivory symbol on a full-bleed muted forest-green square background based on #477357, with sage leaves and restrained red/gold accents. Avoid realistic rendering, detailed flowers, soil, pots, ornate texture, glossy shading or excessive fine lines.\nComposition: a single centered symbol occupying roughly 72 percent of the canvas, generous Android/iOS icon safe margin. Background reaches all four square edges and corners, no pre-rounded outside corners. No phone/mockup, no caption, no watermark, no wordmark. The only text is the single letter \"Ä\", no other lettering.\nMake the connection between German words, speaking and a growing garden immediately obvious, with a fresh memorable shape."
+    }
+  ]
+}

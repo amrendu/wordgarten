@@ -1,0 +1,36 @@
+{
+  "version": "1.2.5+15",
+  "entranceMs": 1400,
+  "completedSceneHoldMs": 700,
+  "handoffMs": 240,
+  "designedSequenceMs": 2340,
+  "reducedMotion": "immediate when ready",
+  "crossfade": "app mounted underneath; pointer, focus and semantics enabled after completion",
+  "logoPreloadedBeforeFirstFrame": true,
+  "nativeLaunch": {
+    "background": "#FAFAF5",
+    "androidLegacy": "background only; no bitmap logo",
+    "android12AndLater": "transparent splash icon in light and night themes; system exit removed on first Flutter frame",
+    "ios": "launch storyboard image and image constraints removed",
+    "limitation": "platform launch windows still exist briefly before Flutter renders"
+  },
+  "addedRasterAssets": 0,
+  "androidApkBytes": 478542924,
+  "validation": {
+    "flutterAnalyze": "passed",
+    "flutterTests": 67,
+    "webStartupAndHandoff": "captured from actual compiled Flutter app",
+    "androidReleaseBuild": "passed; arm64 only; version code 15",
+    "androidApkIntegrityAndSignature": "passed; existing signing certificate preserved",
+    "androidPackagedLaunchResources": "verified background-only drawable, transparent vector and both v31 theme variants using aapt",
+    "androidInstall": "adb install -r succeeded; 1.2.5 confirmed",
+    "androidStartup": "process running; no Flutter startup errors detected",
+    "androidRenderedUi": "not inspected because the connected phone was locked",
+    "iosSimulatorBuild": "passed",
+    "iosNativeColdStart": "captured plain launch background, animated garden and successful onboarding handoff",
+    "androidColdStart": "activity start completed successfully",
+    "firstFrameLogo": "verified in the captured Flutter animation"
+  },
+  "animationPreview": "output/screenshots/splash-improved.gif",
+  "previewStrip": "output/screenshots/splash-preview.png"
+}

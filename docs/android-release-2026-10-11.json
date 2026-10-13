@@ -1,0 +1,69 @@
+{
+  "version": "1.2.5",
+  "versionCode": 16,
+  "package": "com.wortgarten.german_vocabulary",
+  "minSdk": 24,
+  "targetSdk": 36,
+  "signing": "Dedicated RSA 2048-bit upload key; Google-managed distribution signing is selected in Play Console",
+  "publicCertificate": [
+    "Owner: CN=Wortgarten Upload",
+    "SHA256: 19:5E:23:87:60:39:53:83:2B:EF:B4:C8:86:0E:EC:FC:3E:AE:17:6B:8F:CE:B0:C6:25:9D:F3:62:BB:C8:5B:05"
+  ],
+  "files": [
+    {
+      "path": "build/app/outputs/flutter-apk/app-arm64-v8a-release.apk",
+      "bytes": 478542924,
+      "sha256": "3c6819214cdb93c3dccd8933fa4ceb6484195d5036f5de09d044a03d95cfeb96"
+    },
+    {
+      "path": "build/app/outputs/bundle/release/app-release.aab",
+      "bytes": 441209300,
+      "sha256": "89126bc4af4c17d18c3ac8fda5b788775f0e87b7b272cc07a20a47ccfdef4716"
+    }
+  ],
+  "bundletoolVersion": "1.18.3",
+  "estimatedDownloadsByAbi": [
+    {
+      "abi": "x86_64",
+      "minBytes": 387923738,
+      "maxBytes": 387946844
+    },
+    {
+      "abi": "arm64-v8a",
+      "minBytes": 387729819,
+      "maxBytes": 387752929
+    },
+    {
+      "abi": "armeabi-v7a",
+      "minBytes": 387298607,
+      "maxBytes": 387321730
+    }
+  ],
+  "maximumEstimatedDownloadBytes": 387946844,
+  "validation": {
+    "apkSignature": "passed",
+    "aabSignature": "passed; canonical JAR ordering",
+    "bundletoolValidate": "passed",
+    "bundletoolDeviceApkGeneration": "Code 15 validated; code 16 processed successfully by Play Console",
+    "zipIntegrity": "passed",
+    "apk16KiBZipAlignment": "passed",
+    "all64BitElfLoadAlignment": "passed",
+    "debuggable": false,
+    "privateSigningFilesBundled": false
+  },
+  "freeTierTesting": true,
+  "purchaseVerificationConfigured": false,
+  "publicPolicyUrlsConfigured": true,
+  "remainingConsoleTasks": [
+    "Reviewer access to locked Premium content",
+    "Publish Wortgarten privacy addendum",
+    "Release review and rollout"
+  ],
+  "sizeLimitSource": "https://support.google.com/googleplay/android-developer/answer/9859372",
+  "testingRequirementsSource": "https://support.google.com/googleplay/android-developer/answer/14151465",
+  "privacyUrl": "https://deutsch-pruefung.de/privacy",
+  "termsUrlConfigured": false,
+  "playConsoleReportedDownloadMB": 388,
+  "estimatedDownloadsByAbiBasis": "Prior code 15 local estimate; Play Console reports 388 MB for code 16",
+  "dataSafetyDeclaration": "Saved: no collection or sharing for code 16 with payments disabled"
+}

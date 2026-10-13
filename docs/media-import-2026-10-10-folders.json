@@ -1,0 +1,50 @@
+{
+  "importedAt": "2026-10-10T20:50:44.115Z",
+  "source": "../german-exam-prep",
+  "organizedSourceFolders": [
+    "a1",
+    "a2",
+    "b1",
+    "b2",
+    "c1",
+    "topics"
+  ],
+  "referenceWords": 3196,
+  "mobileWords": 3284,
+  "mobileLessons": 565,
+  "allExistingWordAndLessonIdsPreserved": true,
+  "vocabularyTextUnchanged": true,
+  "lessonMembershipsUnchanged": true,
+  "newCustomWordImages": 575,
+  "newMp3Files": 2056,
+  "media": {
+    "wordImages": 3196,
+    "customWordImages": 2241,
+    "topicImages": 27,
+    "termAudio": 3179,
+    "exampleAudio": 3180,
+    "cardAudio": 3180
+  },
+  "mediaBytes": 444579675,
+  "skippedIncompleteMedia": [
+    {
+      "kind": "unfinished-audio",
+      "wordId": "a1-n-die-frage",
+      "audioKind": "term"
+    }
+  ],
+  "validation": {
+    "audioCopiesMatchSource": 9539,
+    "importerTests": 6,
+    "flutterTests": 60,
+    "flutterAnalyze": "passed",
+    "iosNativeMp3Playback": "new C1 term, example, full-card playback and cancellation passed",
+    "androidReleaseApkBytes": 474787876,
+    "allImportedMediaPackaged": 12762,
+    "androidVersion": "1.2.2+12",
+    "iosAppBundleMediaVerified": 12762,
+    "androidInstall": "adb install -r succeeded; version 1.2.2 installed",
+    "androidStartup": "process running; no Flutter startup errors detected",
+    "androidScreenCheck": "phone locked; rendered screen could not be inspected"
+  }
+}

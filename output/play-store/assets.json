@@ -1,0 +1,27 @@
+[
+  {
+    "file": "01-home.png",
+    "width": 780,
+    "height": 1688
+  },
+  {
+    "file": "02-flashcards.png",
+    "width": 780,
+    "height": 1688
+  },
+  {
+    "file": "03-word-details.png",
+    "width": 780,
+    "height": 1688
+  },
+  {
+    "file": "app-icon-512.png",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "file": "feature-graphic-1024x500.png",
+    "width": 1024,
+    "height": 500
+  }
+]

@@ -1,0 +1,108 @@
+{
+  "checked_at": "2026-10-11",
+  "app_version": "1.3.0+17",
+  "ios_bundle_id": "com.wortgarten.germanVocabulary",
+  "apple_app_id": "6821670098",
+  "revenuecat_project_id": "73132ff1",
+  "revenuecat_app_id": "app3a8fa84ec9",
+  "entitlement": "premium",
+  "offering": "default",
+  "ios_public_sdk_key_configured": true,
+  "local_ios_revenuecat_enabled": true,
+  "android_revenuecat_configured": true,
+  "products": [
+    {
+      "id": "wortgarten_premium_weekly",
+      "package": "$rc_weekly",
+      "germany_eur": "4.90",
+      "duration": "1 week"
+    },
+    {
+      "id": "wortgarten_premium_monthly",
+      "package": "$rc_monthly",
+      "germany_eur": "9.99",
+      "duration": "1 month"
+    },
+    {
+      "id": "wortgarten_premium_lifetime",
+      "package": "$rc_lifetime",
+      "germany_eur": "99.00",
+      "type": "non-consumable"
+    }
+  ],
+  "apple_product_availability": "all 175 regions",
+  "production_and_sandbox_notification_urls_saved": true,
+  "apple_paid_apps_agreement_banking_and_tax": "Active",
+  "tests": {
+    "flutter_tests_passed": 76,
+    "flutter_analyze": "clean",
+    "revenuecat_enabled_unsigned_ios_release_build": "passed",
+    "native_revenuecat_configuration": "connected",
+    "native_customer_info": "fetched",
+    "native_offering_three_product_check": "failed: only lifetime returned",
+    "actual_purchase_or_restore": "not tested"
+  },
+  "pending": [
+    "Resolve weekly/monthly product availability in StoreKit; repeat native diagnostic",
+    "Place weekly and monthly at the same Apple subscription service level",
+    "Upload product review screenshots and complete app release metadata",
+    "Publish purchase privacy addendum and complete Apple App Privacy",
+    "Confirm notification v2 delivery and RevenueCat restore-transfer settings",
+    "Sign and upload an iOS build to TestFlight",
+    "Complete real-device sandbox purchase, restore and expiry tests"
+  ],
+  "submitted_to_app_review": false,
+  "existing_android_closed_test_artifacts_changed": false,
+  "android_revenuecat": {
+    "app_id": "app2c4daa6054",
+    "package_name": "com.wortgarten.german_vocabulary",
+    "public_sdk_key_configured": true,
+    "credentials": "Valid credentials",
+    "service_account": "revenuecat@gen-lang-client-0008577437.iam.gserviceaccount.com",
+    "service_account_private_key_in_app": false,
+    "new_key_filename": "gen-lang-client-0008577437-c183fd918202.json",
+    "products": [
+      {
+        "id": "wortgarten_premium_weekly:weekly",
+        "rc_id": "prod9b0ff94827",
+        "germany_eur": "4.90",
+        "state": "Active"
+      },
+      {
+        "id": "wortgarten_premium_monthly:monthly",
+        "rc_id": "prod96700e29cc",
+        "germany_eur": "9.99",
+        "state": "Active"
+      },
+      {
+        "id": "wortgarten_premium_lifetime",
+        "rc_id": "prod7b09a5ec94",
+        "germany_eur": "99.00",
+        "state": "Active"
+      }
+    ],
+    "all_products_attached_to_premium": true,
+    "all_products_mapped_in_default_offering": true,
+    "notification_topic": "projects/gen-lang-client-0008577437/topics/revenuecat-wortgarten",
+    "revenuecat_topic_connected": true,
+    "play_notifications_enabled_for_subscriptions_and_one_time": true,
+    "notification_test": "Passed: RevenueCat Last received 2026-10-11 19:21 UTC",
+    "live_purchase_test": "Not performed: Android device not connected",
+    "uploaded_new_android_build": false,
+    "google_cloud_topic_created": true,
+    "android_terms_link": "Google Play platform terms; app-specific terms pending",
+    "android_base_plan_mapping_unit_tests": "passed",
+    "service_account_key_file_permissions": "600",
+    "flutter_analyze": "clean",
+    "regression_tests": "passed",
+    "debug_build": "passed with final RevenueCat configuration",
+    "debug_apk": "build/app/outputs/flutter-apk/app-debug.apk",
+    "google_play_publisher_permission": {
+      "principal": "google-play-developer-notifications@system.gserviceaccount.com",
+      "role": "Pub/Sub Publisher",
+      "scope": "revenuecat-wortgarten topic only",
+      "user_approved": true,
+      "saved": true
+    }
+  }
+}
