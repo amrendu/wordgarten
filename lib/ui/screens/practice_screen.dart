@@ -440,7 +440,12 @@ class _PracticeScreenState extends State<PracticeScreen>
                       Expanded(
                         child: Center(
                           child: ConstrainedBox(
-                            constraints: const BoxConstraints(maxWidth: 620),
+                            constraints: BoxConstraints(
+                              maxWidth: constraints.maxWidth >= 760 ? 900 : 620,
+                              maxHeight: constraints.maxWidth >= 760
+                                  ? 860
+                                  : double.infinity,
+                            ),
                             child: _recallCard(word, session),
                           ),
                         ),
@@ -831,39 +836,68 @@ class _PracticeScreenState extends State<PracticeScreen>
             ),
           ],
         ),
-        WordArtwork(word, size: _artworkSize(word, c.session!)),
-        const SizedBox(height: 8),
-        Text(
-          word.term,
-          textAlign: TextAlign.center,
-          style: Theme.of(context).textTheme.headlineMedium
-              ?.copyWith(fontSize: 26),
-        ),
-        const SizedBox(height: 6),
-        Text(
-          word.translation,
-          textAlign: TextAlign.center,
-          style: const TextStyle(fontSize: 17, color: Garden.green),
-        ),
-        const SizedBox(height: 9),
-        Text(
-          word.definition,
-          textAlign: TextAlign.center,
-          style: const TextStyle(fontSize: 12, color: Garden.muted),
-        ),
-        const SizedBox(height: 14),
-        const Divider(height: 1),
-        const SizedBox(height: 12),
-        Text(
-          word.example,
-          textAlign: TextAlign.center,
-          style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w500),
-        ),
-        const SizedBox(height: 5),
-        Text(
-          word.exampleTranslation,
-          textAlign: TextAlign.center,
-          style: const TextStyle(fontSize: 12, color: Garden.muted),
+        LayoutBuilder(
+          builder: (context, bounds) {
+            final tablet = bounds.maxWidth >= 720;
+            final details = Column(
+              children: [
+                const SizedBox(height: 8),
+                Text(
+                  word.term,
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.headlineMedium
+                      ?.copyWith(fontSize: 26),
+                ),
+                const SizedBox(height: 6),
+                Text(
+                  word.translation,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(fontSize: 17, color: Garden.green),
+                ),
+                const SizedBox(height: 9),
+                Text(
+                  word.definition,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(fontSize: 12, color: Garden.muted),
+                ),
+                const SizedBox(height: 14),
+                const Divider(height: 1),
+                const SizedBox(height: 12),
+                Text(
+                  word.example,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    fontSize: 13,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                const SizedBox(height: 5),
+                Text(
+                  word.exampleTranslation,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(fontSize: 12, color: Garden.muted),
+                ),
+              ],
+            );
+            if (!tablet) {
+              return Column(
+                children: [
+                  WordArtwork(word, size: _artworkSize(word, c.session!)),
+                  details,
+                ],
+              );
+            }
+            return Padding(
+              padding: const EdgeInsets.symmetric(vertical: 24),
+              child: Row(
+                children: [
+                  WordArtwork(word, size: 340),
+                  const SizedBox(width: 28),
+                  Expanded(child: details),
+                ],
+              ),
+            );
+          },
         ),
       ],
     ),
@@ -909,7 +943,11 @@ class _PracticeScreenState extends State<PracticeScreen>
         final contentHeight = max(0.0, bounds.maxHeight - 110);
         final compact = contentHeight < 500;
         final gap = compact ? 8.0 : 14.0;
-        final pictureSize = (contentHeight * .34).clamp(100.0, 230.0);
+        final pictureSize =
+            (contentHeight * (bounds.maxWidth >= 760 ? .42 : .34)).clamp(
+              100.0,
+              bounds.maxWidth >= 760 ? 310.0 : 230.0,
+            );
         final part = word.part.isEmpty
             ? ''
             : '${word.part[0].toUpperCase()}${word.part.substring(1)}';

@@ -1,0 +1,37 @@
+WORTGARTEN APP STORE IMAGE ASSETS — 2026-10-13
+
+35 opaque sRGB PNG images, based on the current app UI and existing brand.
+
+SCREENSHOTS
+Upload en/iphone/01 through 07 to the English iPhone large-display screenshot slot.
+Upload de/iphone/01 through 07 to the German iPhone large-display screenshot slot.
+iPhone exports: 1320 x 2868 pixels.
+For iPad, use the equivalent en/ipad or de/ipad files in the 13-inch slot.
+iPad exports: 2064 x 2752 pixels.
+Maintain the numbered order. The German version translates the marketing headlines;
+the application interface in these captures is English.
+
+CREATIVE ASSETS
+Use each language's creative/product-page-header.png for Header and creative/search-results.png for Search Results.
+These 14 October revisions use larger crop-safe branding, illustrated vocabulary and a Goethe/telc line.
+The universal.png export is an optional alternative.
+Canvas sizes and safe areas were read from Apple's official Sketch template.
+Review cropping in App Store Connect's Preview tool before submitting.
+The safe-area-guide images in the preview directory are not upload artwork.
+
+ICON
+app-icon-1024.png is the existing approved Wortgarten icon, exported without alpha.
+The icon is already included in the app binary; use this file where a master image is requested.
+
+CAPTURE AND VALIDATION
+Native iPhone 18 Pro Max and iPad Pro 13-inch simulator captures.
+Representative progress was seeded in memory. No personal progress or live purchases accessed.
+Audio was held in a playing state for still captures; screenshots use actual production widgets.
+Both native capture runs passed. All upload files have verified dimensions and RGB format.
+No prices, discounts, URLs, awards or other marketplace logos are included.
+App preview videos are not included in this image package.
+
+Sources:
+https://developer.apple.com/app-store/asset-best-practices/
+https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications
+https://devimages-cdn.apple.com/design/resources/download/app-store/creative_assets-templates.sketch

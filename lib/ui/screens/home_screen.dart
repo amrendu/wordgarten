@@ -24,9 +24,247 @@ class HomeScreen extends StatelessWidget {
     final lessons = c.catalog.collections(c.level);
     final goalDone = c.todayCount >= c.goal;
     final resume = c.session;
+    final media = MediaQuery.of(context);
+    final tablet =
+        media.size.shortestSide >= 700 &&
+        media.size.width >= 768 &&
+        media.textScaler.scale(12) <= 18;
+    final dailyPractice = GardenCard(
+      color: Garden.mint,
+      padding: const EdgeInsets.all(20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Expanded(
+                flex: 3,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 7,
+                      ),
+                      decoration: BoxDecoration(
+                        color: Colors.white.withValues(alpha: .65),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Text.rich(
+                        TextSpan(
+                          children: [
+                            TextSpan(
+                              text: c.level,
+                              style: const TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                            const TextSpan(
+                              text: ' · DAILY PRACTICE',
+                              style: TextStyle(
+                                fontSize: 10,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ],
+                        ),
+                        style: const TextStyle(color: Garden.green),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    Text(
+                      goalDone
+                          ? 'A good day\nfor your German.'
+                          : '${c.goal} words.\nFresh start.',
+                      style: const TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.w700,
+                        letterSpacing: -.8,
+                        height: 1.2,
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    Text(
+                      goalDone
+                          ? 'Your daily goal is complete. Keep exploring at your own pace.'
+                          : 'A few minutes today.\nA little more confidence.',
+                      style: const TextStyle(
+                        fontSize: 11,
+                        color: Garden.green,
+                        height: 1.6,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(width: 8),
+              const Flexible(
+                flex: 2,
+                child: GardenIllustration(
+                  'garden-hero',
+                  width: 138,
+                  height: 142,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 20),
+          SizedBox(
+            width: double.infinity,
+            child: FilledButton(
+              onPressed: goalDone
+                  ? onExplore
+                  : () => startPractice(
+                      context,
+                      c,
+                      c.dailyWords,
+                      PracticeMode.flashcards,
+                      'Daily practice',
+                    ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Flexible(
+                    child: Text(
+                      goalDone
+                          ? 'Explore more words'
+                          : 'Start my daily practice',
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  const Icon(Icons.arrow_forward_rounded, size: 18),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+    final examSection = <Widget>[
+      const SectionHeading('Prepare for your exam'),
+      const SizedBox(height: 6),
+      const Text(
+        'Exam vocabulary for A1–C1',
+        style: TextStyle(fontSize: 11, color: Garden.muted),
+      ),
+      const SizedBox(height: 14),
+      LayoutBuilder(
+        builder: (context, constraints) {
+          final cards = [
+            for (final (exam, name, color, art) in [
+              ('goethe', 'Goethe', Garden.lavender, 'school'),
+              ('telc', 'telc', Garden.peach, 'checklist'),
+            ])
+              _ExamCard(
+                key: ValueKey('home-exam-$exam'),
+                controller: c,
+                exam: exam,
+                name: name,
+                color: color,
+                art: art,
+                onTap: () => onExam(exam),
+              ),
+          ];
+          if (constraints.maxWidth < 270 ||
+              MediaQuery.textScalerOf(context).scale(14) > 18.2) {
+            return Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [cards.first, const SizedBox(height: 12), cards.last],
+            );
+          }
+          return Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(child: cards.first),
+              const SizedBox(width: 12),
+              Expanded(child: cards.last),
+            ],
+          );
+        },
+      ),
+    ];
+    final dailyProgress = <Widget>[
+      GardenCard(
+        padding: const EdgeInsets.all(17),
+        child: Row(
+          children: [
+            SizedBox(
+              width: 43,
+              height: 43,
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  CircularProgressIndicator(
+                    value: (c.todayCount / c.goal).clamp(0, 1),
+                    strokeWidth: 4,
+                    backgroundColor: Garden.mint,
+                    color: Garden.green,
+                  ),
+                  Text(
+                    '${c.todayCount}',
+                    style: const TextStyle(
+                      fontWeight: FontWeight.w700,
+                      fontSize: 15,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(width: 16),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Every word is a small win',
+                    style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    '${c.todayCount} of ${c.goal} words practised today',
+                    style: const TextStyle(fontSize: 10, color: Garden.muted),
+                  ),
+                ],
+              ),
+            ),
+            const Icon(
+              Icons.wb_sunny_outlined,
+              size: 24,
+              color: Color(0xFFD6AD64),
+            ),
+          ],
+        ),
+      ),
+      const SizedBox(height: 20),
+      Row(
+        children: [
+          Expanded(
+            child: _Metric(
+              icon: Icons.local_fire_department_outlined,
+              value: '${c.streak}',
+              label: 'day streak',
+              color: Garden.peach,
+            ),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: _Metric(
+              icon: Icons.spa_outlined,
+              value: '${c.learned}',
+              label: 'words recalled',
+              color: Garden.lavender,
+            ),
+          ),
+        ],
+      ),
+    ];
     return ListView(
       key: const ValueKey('home-discovery-scroll'),
-      padding: const EdgeInsets.fromLTRB(24, 24, 24, 24),
+      padding: const EdgeInsets.all(24),
       children: [
         const Eyebrow('Guten Tag, word explorer'),
         const SizedBox(height: 9),
@@ -35,239 +273,48 @@ class HomeScreen extends StatelessWidget {
           style: Theme.of(context).textTheme.headlineLarge,
         ),
         const SizedBox(height: 18),
-        GardenCard(
-          color: Garden.mint,
-          padding: const EdgeInsets.all(20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Expanded(
-                    flex: 3,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 10,
-                            vertical: 7,
-                          ),
-                          decoration: BoxDecoration(
-                            color: Colors.white.withValues(alpha: .65),
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          child: Text.rich(
-                            TextSpan(
-                              children: [
-                                TextSpan(
-                                  text: c.level,
-                                  style: const TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.w700,
-                                  ),
-                                ),
-                                const TextSpan(
-                                  text: ' · DAILY PRACTICE',
-                                  style: TextStyle(
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.w600,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            style: const TextStyle(color: Garden.green),
-                          ),
-                        ),
-                        const SizedBox(height: 16),
-                        Text(
-                          goalDone
-                              ? 'A good day\nfor your German.'
-                              : '${c.goal} words.\nFresh start.',
-                          style: const TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.w700,
-                            letterSpacing: -.8,
-                            height: 1.2,
-                          ),
-                        ),
-                        const SizedBox(height: 10),
-                        Text(
-                          goalDone
-                              ? 'Your daily goal is complete. Keep exploring at your own pace.'
-                              : 'A few minutes today.\nA little more confidence.',
-                          style: const TextStyle(
-                            fontSize: 11,
-                            color: Garden.green,
-                            height: 1.6,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(width: 8),
-                  const Flexible(
-                    flex: 2,
-                    child: GardenIllustration(
-                      'garden-hero',
-                      width: 138,
-                      height: 142,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 20),
-              SizedBox(
-                width: double.infinity,
-                child: FilledButton(
-                  onPressed: goalDone
-                      ? onExplore
-                      : () => startPractice(
-                          context,
-                          c,
-                          c.dailyWords,
-                          PracticeMode.flashcards,
-                          'Daily practice',
-                        ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Flexible(
-                        child: Text(
-                          goalDone
-                              ? 'Explore more words'
-                              : 'Start my daily practice',
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                      const SizedBox(width: 12),
-                      const Icon(Icons.arrow_forward_rounded, size: 18),
-                    ],
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-        const SizedBox(height: 22),
-        const SectionHeading('Prepare for your exam'),
-        const SizedBox(height: 6),
-        const Text(
-          'Exam vocabulary for A1–C1',
-          style: TextStyle(fontSize: 11, color: Garden.muted),
-        ),
-        const SizedBox(height: 14),
+
         LayoutBuilder(
-          builder: (context, constraints) {
-            final cards = [
-              for (final (exam, name, color, art) in [
-                ('goethe', 'Goethe', Garden.lavender, 'school'),
-                ('telc', 'telc', Garden.peach, 'checklist'),
-              ])
-                _ExamCard(
-                  key: ValueKey('home-exam-$exam'),
-                  controller: c,
-                  exam: exam,
-                  name: name,
-                  color: color,
-                  art: art,
-                  onTap: () => onExam(exam),
-                ),
-            ];
-            if (constraints.maxWidth < 270 ||
-                MediaQuery.textScalerOf(context).scale(14) > 18.2) {
+          builder: (context, bounds) {
+            if (!tablet || bounds.maxWidth < 720) {
               return Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [cards.first, const SizedBox(height: 12), cards.last],
+                children: [
+                  dailyPractice,
+                  const SizedBox(height: 22),
+                  ...examSection,
+                  const SizedBox(height: 16),
+                  ...dailyProgress,
+                ],
               );
             }
             return Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Expanded(child: cards.first),
-                const SizedBox(width: 12),
-                Expanded(child: cards.last),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      dailyPractice,
+                      const SizedBox(height: 16),
+                      LearningPath(controller: c, onExplore: onExplore),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: 24),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      ...examSection,
+                      const SizedBox(height: 16),
+                      ...dailyProgress,
+                    ],
+                  ),
+                ),
               ],
             );
           },
-        ),
-        const SizedBox(height: 16),
-        GardenCard(
-          padding: const EdgeInsets.all(17),
-          child: Row(
-            children: [
-              SizedBox(
-                width: 43,
-                height: 43,
-                child: Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    CircularProgressIndicator(
-                      value: (c.todayCount / c.goal).clamp(0, 1),
-                      strokeWidth: 4,
-                      backgroundColor: Garden.mint,
-                      color: Garden.green,
-                    ),
-                    Text(
-                      '${c.todayCount}',
-                      style: const TextStyle(
-                        fontWeight: FontWeight.w700,
-                        fontSize: 15,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(width: 16),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text(
-                      'Every word is a small win',
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      '${c.todayCount} of ${c.goal} words practised today',
-                      style: const TextStyle(fontSize: 10, color: Garden.muted),
-                    ),
-                  ],
-                ),
-              ),
-              const Icon(
-                Icons.wb_sunny_outlined,
-                size: 24,
-                color: Color(0xFFD6AD64),
-              ),
-            ],
-          ),
-        ),
-        const SizedBox(height: 20),
-        Row(
-          children: [
-            Expanded(
-              child: _Metric(
-                icon: Icons.local_fire_department_outlined,
-                value: '${c.streak}',
-                label: 'day streak',
-                color: Garden.peach,
-              ),
-            ),
-            const SizedBox(width: 12),
-            Expanded(
-              child: _Metric(
-                icon: Icons.spa_outlined,
-                value: '${c.learned}',
-                label: 'words recalled',
-                color: Garden.lavender,
-              ),
-            ),
-          ],
         ),
         if (resume != null && !resume.complete) ...[
           const SizedBox(height: 22),
@@ -308,8 +355,10 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
         ],
-        const SizedBox(height: 22),
-        LearningPath(controller: c, onExplore: onExplore),
+        if (!tablet) ...[
+          const SizedBox(height: 22),
+          LearningPath(controller: c, onExplore: onExplore),
+        ],
         const SizedBox(height: 24),
         const SectionHeading('Find your rhythm'),
         const SizedBox(height: 6),

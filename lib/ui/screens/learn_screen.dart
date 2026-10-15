@@ -347,13 +347,33 @@ class _LearnScreenState extends State<LearnScreen> {
         else
           SliverPadding(
             padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
-            sliver: SliverList.builder(
-              itemCount: lessons.length,
-              itemBuilder: (context, index) => LessonTile(
-                lesson: lessons[index],
-                controller: c,
-                onTap: () => openLesson(context, c, lessons[index]),
-              ),
+            sliver: SliverLayoutBuilder(
+              builder: (context, constraints) {
+                Widget tile(BuildContext context, int index) => LessonTile(
+                  lesson: lessons[index],
+                  controller: c,
+                  onTap: () => openLesson(context, c, lessons[index]),
+                );
+                if (constraints.crossAxisExtent < 720 ||
+                    MediaQuery.textScalerOf(context).scale(12) > 18) {
+                  return SliverList.builder(
+                    itemCount: lessons.length,
+                    itemBuilder: tile,
+                  );
+                }
+                return SliverGrid(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    mainAxisExtent: 112,
+                    crossAxisSpacing: 18,
+                    mainAxisSpacing: 6,
+                  ),
+                  delegate: SliverChildBuilderDelegate(
+                    tile,
+                    childCount: lessons.length,
+                  ),
+                );
+              },
             ),
           ),
       ],

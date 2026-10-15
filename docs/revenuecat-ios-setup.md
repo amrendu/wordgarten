@@ -84,3 +84,19 @@ flutter build appbundle --release --dart-define-from-file=config/revenuecat.loca
 ```
 
 For no-charge Play purchase testing, the tester must be a Google Play license tester and use the expected Google account on the device. Install a billing-enabled build from an internal/closed test, check the purchase sheet offers Google's test payment methods, then verify sandbox transactions and active `premium` in RevenueCat. Test cancellation, expiry, grace/account-hold behavior, refund, lifetime restoration and restore after reinstall. Reinstalling erases local learning progress, so use a dedicated test device/account. No Android device was connected during this setup; a live purchase has not been tested.
+
+## Android recheck — 14 October 2026
+
+Verified the existing setup in the live RevenueCat dashboard: Play credentials are valid, Google notifications remain connected, all three Android products are attached to `premium`, and `default` maps weekly/monthly/lifetime packages to the corresponding Play products alongside the iOS products. The monthly product shows Published. Local `config/revenuecat.local.json` already enables RevenueCat and contains the Android public SDK key. No duplicate app, products or credentials were created.
+
+The Wortgarten RevenueCat privacy policy has since been deployed at https://deutsch-pruefung.de/wortgarten-privacy. The earlier October 11 policy observation above is historical. Play Data Safety still needs verification for the payment-enabled Android build. No new Android release was uploaded and no Android purchase or restore transaction was performed in this recheck.
+
+## Android closed-test upload — 14 October 2026
+
+Built signed version **1.3.0 (19)** using `flutter build appbundle --release --dart-define-from-file=config/revenuecat.local.json`. All 18 billing tests passed; Flutter analysis reported no issues. ZIP integrity and JAR signature verification passed after restoring canonical JAR ordering without changing signed entry contents. Private configuration and signing files were not bundled.
+
+Uploaded and processed the bundle in the existing **Closed testing - Alpha** track. Google reports 389 MB for new installs. Saved a 100% rollout to this existing test track, then submitted three changes: release, Data Safety, and the Wortgarten privacy-policy URL. Play Console confirmed **Changes in review** with automated quick checks still running. Managed publishing is off, so rollout follows successful review. This does not launch production.
+
+Data Safety declares Purchase history collected (not shared under the service-provider exception), required collection, not processed ephemerally, for App functionality and Analytics; encrypted in transit. No app accounts or external-account login. Deletion requests and privacy policy both link to https://deutsch-pruefung.de/wortgarten-privacy, whose live RevenueCat and support-deletion text was checked. Declaration follows [RevenueCat’s Google Data Safety guidance](https://www.revenuecat.com/docs/platform-resources/google-platform-resources/google-plays-data-safety).
+
+Record: `docs/android-release-2026-10-14.json`. Proof: `output/play-store/android-1.3.0-review-submitted.png`. Android license-tester purchase and restore transactions still need real-device testing; no payment was made during the upload.

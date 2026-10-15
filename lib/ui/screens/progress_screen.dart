@@ -104,7 +104,15 @@ class ProgressScreen extends StatelessWidget {
                     key: const ValueKey('progress-activity-scroll'),
                     child: Column(
                       children: [
-                        WeeklyActivity(controller: c, compact: true),
+                        WeeklyActivity(
+                          controller: c,
+                          compact:
+                              MediaQuery.sizeOf(context).shortestSide < 700,
+                        ),
+                        if (MediaQuery.sizeOf(context).shortestSide >= 700) ...[
+                          const SizedBox(height: 18),
+                          MemoryGarden(controller: c),
+                        ],
                         const SizedBox(height: 12),
                         Row(
                           children: [

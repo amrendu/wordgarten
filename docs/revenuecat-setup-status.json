@@ -88,7 +88,7 @@
     "play_notifications_enabled_for_subscriptions_and_one_time": true,
     "notification_test": "Passed: RevenueCat Last received 2026-10-11 19:21 UTC",
     "live_purchase_test": "Not performed: Android device not connected",
-    "uploaded_new_android_build": false,
+    "uploaded_new_android_build": true,
     "google_cloud_topic_created": true,
     "android_terms_link": "Google Play platform terms; app-specific terms pending",
     "android_base_plan_mapping_unit_tests": "passed",
@@ -103,6 +103,24 @@
       "scope": "revenuecat-wortgarten topic only",
       "user_approved": true,
       "saved": true
-    }
+    },
+    "reverified_at": "2026-10-14",
+    "reverification": {
+      "credentials": "Valid credentials in live RevenueCat dashboard",
+      "notifications": "Connected to Google; last received 2026-10-11 19:21 UTC",
+      "entitlement": "premium includes all three Play products",
+      "offering": "default maps weekly, monthly and lifetime to Play products alongside iOS",
+      "local_build_configuration": "RevenueCat enabled; Android SDK key present; entitlement premium and offering default",
+      "monthly_store_status": "Published in RevenueCat",
+      "live_android_purchase_test": "Not performed during this verification",
+      "new_android_release_uploaded": false
+    },
+    "release_version": "1.3.0",
+    "release_version_code": 19,
+    "release_track": "Closed testing - Alpha",
+    "release_review_status": "Changes in review; quick checks running",
+    "data_safety": "Purchase history collected for App functionality and Analytics; required, not ephemeral; encrypted transport; support deletion URL; submitted",
+    "privacy_policy": "https://deutsch-pruefung.de/wortgarten-privacy",
+    "release_record": "docs/android-release-2026-10-14.json"
   }
 }

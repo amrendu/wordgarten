@@ -1,0 +1,114 @@
+{
+  "createdAt": "2026-10-13",
+  "appVersion": "1.3.0+19",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "capture": "Native iOS integration screenshots with in-memory representative progress; no user data or payments accessed",
+  "germanLocalization": "German marketing text; current app interface remains English",
+  "screenshots": {
+    "iphone": [
+      1320,
+      2868
+    ],
+    "ipad": [
+      2064,
+      2752
+    ]
+  },
+  "creativeTemplates": {
+    "source": "https://devimages-cdn.apple.com/design/resources/download/app-store/creative_assets-templates.sketch",
+    "canvases": [
+      {
+        "name": "product-page-header",
+        "size": [
+          3840,
+          1646
+        ],
+        "safeArea": [
+          1097,
+          493,
+          1646,
+          661
+        ]
+      },
+      {
+        "name": "search-results",
+        "size": [
+          3840,
+          2560
+        ],
+        "safeArea": [
+          836,
+          765,
+          2168,
+          1030
+        ]
+      },
+      {
+        "name": "universal",
+        "size": [
+          5244,
+          2950
+        ],
+        "safeArea": [
+          1921,
+          660,
+          1402,
+          962
+        ]
+      }
+    ]
+  },
+  "files": [
+    "en/iphone/01-illustrated.png",
+    "en/iphone/02-recall.png",
+    "en/iphone/03-exams.png",
+    "en/iphone/04-levels.png",
+    "en/iphone/05-audio.png",
+    "en/iphone/06-progress.png",
+    "en/iphone/07-home.png",
+    "de/iphone/01-illustrated.png",
+    "de/iphone/02-recall.png",
+    "de/iphone/03-exams.png",
+    "de/iphone/04-levels.png",
+    "de/iphone/05-audio.png",
+    "de/iphone/06-progress.png",
+    "de/iphone/07-home.png",
+    "en/ipad/01-illustrated.png",
+    "en/ipad/02-recall.png",
+    "en/ipad/03-exams.png",
+    "en/ipad/04-levels.png",
+    "en/ipad/05-audio.png",
+    "en/ipad/06-progress.png",
+    "en/ipad/07-home.png",
+    "de/ipad/01-illustrated.png",
+    "de/ipad/02-recall.png",
+    "de/ipad/03-exams.png",
+    "de/ipad/04-levels.png",
+    "de/ipad/05-audio.png",
+    "de/ipad/06-progress.png",
+    "de/ipad/07-home.png",
+    "en/creative/product-page-header.png",
+    "en/creative/search-results.png",
+    "en/creative/universal.png",
+    "de/creative/product-page-header.png",
+    "de/creative/search-results.png",
+    "de/creative/universal.png",
+    "app-icon-1024.png"
+  ],
+  "guidance": [
+    "https://developer.apple.com/app-store/asset-best-practices/",
+    "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications"
+  ],
+  "rules": [
+    "Current real app UI",
+    "Short localized headlines",
+    "No pricing, discounts, URLs, awards or other marketplace logos",
+    "Opaque RGB PNG exports with sRGB profile",
+    "Key creative content within official safe areas"
+  ],
+  "videoPreviewIncluded": false,
+  "creativeRevision": "2026-10-14: larger crop-safe bilingual branding, vocabulary illustrations, A1–C1 Goethe/telc line; shared header and search placements"
+}

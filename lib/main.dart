@@ -103,15 +103,28 @@ class _WortgartenAppState extends State<WortgartenApp> {
     title: 'Wortgarten · German vocabulary',
     debugShowCheckedModeBanner: false,
     theme: Garden.theme,
-    builder: (context, child) => ColoredBox(
-      color: const Color(0xFFEEF0E8),
-      child: Center(
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 600),
-          child: child!,
+    builder: (context, child) {
+      final media = MediaQuery.of(context);
+      final tablet = media.size.shortestSide >= 700;
+      return ColoredBox(
+        color: const Color(0xFFEEF0E8),
+        child: Center(
+          child: ConstrainedBox(
+            constraints: BoxConstraints(maxWidth: tablet ? 1080 : 600),
+            child: MediaQuery(
+              data: tablet
+                  ? media.copyWith(
+                      textScaler: media.textScaler.scale(1) < 1.15
+                          ? const TextScaler.linear(1.15)
+                          : media.textScaler,
+                    )
+                  : media,
+              child: child!,
+            ),
+          ),
         ),
-      ),
-    ),
+      );
+    },
     home: Stack(
       fit: StackFit.expand,
       children: [

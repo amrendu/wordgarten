@@ -1,7 +1,7 @@
 name: german_vocabulary
 description: An illustrated, offline German vocabulary companion for A1–C1.
 publish_to: none
-version: 1.3.0+17
+version: 1.3.0+19
 
 environment:
   sdk: ^3.13.5
