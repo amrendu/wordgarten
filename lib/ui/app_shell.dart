@@ -11,6 +11,7 @@ import 'screens/library_screen.dart';
 import 'screens/progress_screen.dart';
 import 'theme.dart';
 import 'widgets.dart';
+import 'app_review_link.dart';
 
 class AppShell extends StatefulWidget {
   const AppShell({super.key, required this.controller});
@@ -329,176 +330,210 @@ void showSettings(BuildContext context, AppController c) {
   showModalBottomSheet<void>(
     context: context,
     isScrollControlled: true,
+    useSafeArea: true,
     builder: (context) => StatefulBuilder(
       builder: (context, refresh) => SafeArea(
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.fromLTRB(24, 0, 24, 30),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Make it your own',
-                style: Theme.of(context).textTheme.headlineMedium,
-              ),
-              const SizedBox(height: 24),
-              PremiumInvitation(
-                controller: c,
-                title: c.premium
-                    ? 'Your whole garden is unlocked.'
-                    : 'Discover Wortgarten Premium',
-                description: c.premium
-                    ? 'View your access and manage your purchase.'
-                    : 'All levels, exam collections and your own word lists.',
-              ),
-              const SizedBox(height: 24),
-              const Eyebrow('Daily word goal'),
-              const SizedBox(height: 12),
-              Wrap(
-                spacing: 9,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(24, 0, 12, 12),
+              child: Row(
                 children: [
-                  for (final goal in [5, 10, 15, 20])
-                    ChoiceChip(
-                      label: Text('$goal words'),
-                      selected: c.goal == goal,
-                      showCheckmark: false,
-                      selectedColor: Garden.mint,
-                      onSelected: (_) {
-                        c.setGoal(goal);
+                  Expanded(
+                    child: Text(
+                      'Make it your own',
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
+                  ),
+                  IconButton(
+                    tooltip: 'Close settings',
+                    onPressed: () => Navigator.pop(context),
+                    icon: const Icon(Icons.close_rounded),
+                  ),
+                ],
+              ),
+            ),
+            Flexible(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.fromLTRB(24, 0, 24, 30),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    PremiumInvitation(
+                      controller: c,
+                      title: c.premium
+                          ? 'Your whole garden is unlocked.'
+                          : 'Discover Wortgarten Premium',
+                      description: c.premium
+                          ? 'View your access and manage your purchase.'
+                          : 'All levels, exam collections and your own word lists.',
+                    ),
+                    const SizedBox(height: 24),
+                    const Eyebrow('Daily word goal'),
+                    const SizedBox(height: 12),
+                    Wrap(
+                      spacing: 9,
+                      children: [
+                        for (final goal in [5, 10, 15, 20])
+                          ChoiceChip(
+                            label: Text('$goal words'),
+                            selected: c.goal == goal,
+                            showCheckmark: false,
+                            selectedColor: Garden.mint,
+                            onSelected: (_) {
+                              c.setGoal(goal);
+                              refresh(() {});
+                            },
+                          ),
+                      ],
+                    ),
+                    const SizedBox(height: 24),
+                    const Eyebrow('Pronunciation speed'),
+                    Slider(
+                      value: c.speechRate,
+                      min: .25,
+                      max: .65,
+                      divisions: 4,
+                      label: c.speechRate < .4 ? 'Slower' : 'Natural',
+                      onChanged: (v) {
+                        c.speechRate = v;
+                        c.changed();
                         refresh(() {});
                       },
                     ),
-                ],
-              ),
-              const SizedBox(height: 24),
-              const Eyebrow('Pronunciation speed'),
-              Slider(
-                value: c.speechRate,
-                min: .25,
-                max: .65,
-                divisions: 4,
-                label: c.speechRate < .4 ? 'Slower' : 'Natural',
-                onChanged: (v) {
-                  c.speechRate = v;
-                  c.changed();
-                  refresh(() {});
-                },
-              ),
-              Row(
-                children: [
-                  const Text(
-                    'Slower',
-                    style: TextStyle(color: Garden.muted, fontSize: 11),
-                  ),
-                  const Spacer(),
-                  const Text(
-                    'Natural',
-                    style: TextStyle(color: Garden.muted, fontSize: 11),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 20),
-              SwitchListTile.adaptive(
-                contentPadding: EdgeInsets.zero,
-                title: const Text(
-                  'A gentle daily reminder',
-                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
-                ),
-                subtitle: Text(
-                  c.reminder
-                      ? 'Every day at ${TimeOfDay(hour: c.reminderHour, minute: c.reminderMinute).format(context)}'
-                      : 'A small nudge to keep growing',
-                  style: const TextStyle(fontSize: 12, color: Garden.muted),
-                ),
-                value: c.reminder,
-                onChanged: (enabled) async {
-                  if (enabled) {
-                    final ok = await reminders.schedule(
-                      c.reminderHour,
-                      c.reminderMinute,
-                    );
-                    if (!context.mounted) return;
-                    if (!ok) {
-                      toast(
-                        context,
-                        'Enable notifications in your device settings. Reminders are available in the mobile app.',
-                      );
-                      return;
-                    }
-                  } else {
-                    await reminders.cancel();
-                  }
-                  c.reminder = enabled;
-                  c.changed();
-                  if (context.mounted) refresh(() {});
-                },
-              ),
-              if (c.reminder)
-                TextButton.icon(
-                  icon: const Icon(Icons.schedule_rounded, size: 18),
-                  label: const Text('Change reminder time'),
-                  onPressed: () async {
-                    final time = await showTimePicker(
-                      context: context,
-                      initialTime: TimeOfDay(
-                        hour: c.reminderHour,
-                        minute: c.reminderMinute,
+                    Row(
+                      children: [
+                        const Text(
+                          'Slower',
+                          style: TextStyle(color: Garden.muted, fontSize: 11),
+                        ),
+                        const Spacer(),
+                        const Text(
+                          'Natural',
+                          style: TextStyle(color: Garden.muted, fontSize: 11),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 20),
+                    SwitchListTile.adaptive(
+                      contentPadding: EdgeInsets.zero,
+                      title: const Text(
+                        'A gentle daily reminder',
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600,
+                        ),
                       ),
-                    );
-                    if (time == null) return;
-                    final ok = await reminders.schedule(time.hour, time.minute);
-                    if (!context.mounted) return;
-                    if (ok) {
-                      c.reminderHour = time.hour;
-                      c.reminderMinute = time.minute;
-                      c.changed();
-                      refresh(() {});
-                    } else {
-                      toast(
-                        context,
-                        'The reminder could not be changed. Your previous time is kept.',
-                      );
-                    }
-                  },
+                      subtitle: Text(
+                        c.reminder
+                            ? 'Every day at ${TimeOfDay(hour: c.reminderHour, minute: c.reminderMinute).format(context)}'
+                            : 'A small nudge to keep growing',
+                        style: const TextStyle(
+                          fontSize: 12,
+                          color: Garden.muted,
+                        ),
+                      ),
+                      value: c.reminder,
+                      onChanged: (enabled) async {
+                        if (enabled) {
+                          final ok = await reminders.schedule(
+                            c.reminderHour,
+                            c.reminderMinute,
+                          );
+                          if (!context.mounted) return;
+                          if (!ok) {
+                            toast(
+                              context,
+                              'Enable notifications in your device settings. Reminders are available in the mobile app.',
+                            );
+                            return;
+                          }
+                        } else {
+                          await reminders.cancel();
+                        }
+                        c.reminder = enabled;
+                        c.changed();
+                        if (context.mounted) refresh(() {});
+                      },
+                    ),
+                    if (c.reminder)
+                      TextButton.icon(
+                        icon: const Icon(Icons.schedule_rounded, size: 18),
+                        label: const Text('Change reminder time'),
+                        onPressed: () async {
+                          final time = await showTimePicker(
+                            context: context,
+                            initialTime: TimeOfDay(
+                              hour: c.reminderHour,
+                              minute: c.reminderMinute,
+                            ),
+                          );
+                          if (time == null) return;
+                          final ok = await reminders.schedule(
+                            time.hour,
+                            time.minute,
+                          );
+                          if (!context.mounted) return;
+                          if (ok) {
+                            c.reminderHour = time.hour;
+                            c.reminderMinute = time.minute;
+                            c.changed();
+                            refresh(() {});
+                          } else {
+                            toast(
+                              context,
+                              'The reminder could not be changed. Your previous time is kept.',
+                            );
+                          }
+                        },
+                      ),
+                    const SizedBox(height: 18),
+                    const Divider(),
+                    const SizedBox(height: 18),
+                    const Row(
+                      children: [
+                        Icon(
+                          Icons.offline_bolt_outlined,
+                          size: 18,
+                          color: Garden.green,
+                        ),
+                        SizedBox(width: 9),
+                        Expanded(
+                          child: Text(
+                            'Your vocabulary and progress stay on this device.',
+                            style: TextStyle(fontSize: 12, color: Garden.muted),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 18),
+                    TextButton.icon(
+                      onPressed: () {
+                        Navigator.pop(context);
+                        Navigator.of(context).push(
+                          MaterialPageRoute<void>(
+                            builder: (_) => _IntroductionPreview(controller: c),
+                          ),
+                        );
+                      },
+                      icon: const Icon(Icons.spa_outlined, size: 18),
+                      label: const Text('See the introduction again'),
+                    ),
+                    TextButton(
+                      onPressed: () => showSources(context, c),
+                      child: const Text('About the vocabulary & sources'),
+                    ),
+                    AppReviewLink(
+                      key: const ValueKey('settings-rate-app'),
+                      controller: c,
+                    ),
+                  ],
                 ),
-              const SizedBox(height: 18),
-              const Divider(),
-              const SizedBox(height: 18),
-              const Row(
-                children: [
-                  Icon(
-                    Icons.offline_bolt_outlined,
-                    size: 18,
-                    color: Garden.green,
-                  ),
-                  SizedBox(width: 9),
-                  Expanded(
-                    child: Text(
-                      'Your vocabulary and progress stay on this device.',
-                      style: TextStyle(fontSize: 12, color: Garden.muted),
-                    ),
-                  ),
-                ],
               ),
-              const SizedBox(height: 18),
-              TextButton.icon(
-                onPressed: () {
-                  Navigator.pop(context);
-                  Navigator.of(context).push(
-                    MaterialPageRoute<void>(
-                      builder: (_) => _IntroductionPreview(controller: c),
-                    ),
-                  );
-                },
-                icon: const Icon(Icons.spa_outlined, size: 18),
-                label: const Text('See the introduction again'),
-              ),
-              TextButton(
-                onPressed: () => showSources(context, c),
-                child: const Text('About the vocabulary & sources'),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     ),

@@ -38,14 +38,16 @@ class PremiumInvitation extends StatelessWidget {
   final String title, description;
   @override
   Widget build(BuildContext context) => GardenCard(
-    color: Garden.lavender,
+    color: Garden.goldLight,
+    borderColor: Garden.goldBorder,
     padding: const EdgeInsets.all(18),
     onTap: () => showPaywall(context, controller, reason: title),
     child: Row(
       children: [
         const IconBadge(
           Icons.workspace_premium_outlined,
-          color: Garden.background,
+          color: Garden.gold,
+          foregroundColor: Garden.goldInk,
           size: 42,
         ),
         const SizedBox(width: 12),
@@ -68,7 +70,11 @@ class PremiumInvitation extends StatelessWidget {
             ],
           ),
         ),
-        const Icon(Icons.arrow_forward_rounded, color: Garden.green, size: 18),
+        const Icon(
+          Icons.arrow_forward_rounded,
+          color: Garden.goldInk,
+          size: 18,
+        ),
       ],
     ),
   );
@@ -119,283 +125,300 @@ class _PaywallScreenState extends State<PaywallScreen> {
       final size = MediaQuery.sizeOf(context);
       final compact = size.height < 900;
       final price = billing.offers[_selected]?.price ?? _selected.previewPrice;
-      return Scaffold(
-        appBar: AppBar(
-          leading: IconButton(
-            tooltip: 'Close premium offer',
-            onPressed: () => Navigator.pop(context, c.premium),
-            icon: const Icon(Icons.close_rounded),
+      return Theme(
+        data: Garden.premiumTheme(Theme.of(context)),
+        child: Scaffold(
+          appBar: AppBar(
+            leading: IconButton(
+              tooltip: 'Close premium offer',
+              onPressed: () => Navigator.pop(context, c.premium),
+              icon: const Icon(Icons.close_rounded),
+            ),
+            title: const Text(
+              'Wortgarten Premium',
+              style: TextStyle(fontSize: 14, color: Garden.goldInk),
+            ),
+            centerTitle: true,
           ),
-          title: const Text(
-            'Wortgarten Premium',
-            style: TextStyle(fontSize: 14),
-          ),
-          centerTitle: true,
-        ),
-        body: SafeArea(
-          bottom: false,
-          child: SingleChildScrollView(
-            key: const ValueKey('paywall-content'),
-            padding: const EdgeInsets.fromLTRB(22, 0, 22, 12),
-            child: Column(
-              children: [
-                GrowingGarden(
-                  size: size.height < 700
-                      ? 100
-                      : compact
-                      ? 145
-                      : 190,
-                ),
-                Text(
-                  c.premium
-                      ? 'Your garden is fully unlocked.'
-                      : 'Let your German flourish.',
-                  textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.headlineMedium
-                      ?.copyWith(fontSize: compact ? 26 : 29),
-                ),
-                const SizedBox(height: 8),
-                Text(
-                  c.premium
-                      ? 'Every level. Every way to learn.'
-                      : widget.reason ??
-                            'More words. More confidence. Your own path.',
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(fontSize: 12, color: Garden.muted),
-                ),
-                const SizedBox(height: 18),
-                const _Benefit(
-                  Icons.auto_stories_outlined,
-                  'All A1–C1 topics and exam collections',
-                ),
-                const _Benefit(
-                  Icons.folder_outlined,
-                  'Your own lists and difficult-word practice',
-                ),
-                const _Benefit(
-                  Icons.insights_rounded,
-                  'Detailed progress and learning insights',
-                ),
-                const _Benefit(
-                  Icons.offline_bolt_outlined,
-                  'Illustrations and audio, ready offline',
-                ),
-                const SizedBox(height: 16),
-                if (!c.premium)
-                  for (final plan in [
-                    PremiumPlan.monthly,
-                    PremiumPlan.weekly,
-                    PremiumPlan.lifetime,
-                  ])
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 8),
-                      child: Semantics(
-                        selected: _selected == plan,
-                        button: true,
-                        child: GardenCard(
-                          color: _selected == plan ? Garden.mint : Colors.white,
-                          padding: EdgeInsets.symmetric(
-                            horizontal: 14,
-                            vertical: compact ? 10 : 13,
-                          ),
-                          onTap: billing.busy
-                              ? null
-                              : () => setState(() => _selected = plan),
-                          child: Row(
-                            children: [
-                              Icon(
-                                _selected == plan
-                                    ? Icons.radio_button_checked_rounded
-                                    : Icons.radio_button_off_rounded,
-                                size: 22,
-                                color: Garden.green,
-                              ),
-                              const SizedBox(width: 12),
-                              Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Row(
-                                      children: [
-                                        Text(
-                                          plan.label,
-                                          style: const TextStyle(
-                                            fontWeight: FontWeight.w600,
-                                            fontSize: 13,
-                                          ),
-                                        ),
-                                        if (plan == PremiumPlan.monthly) ...[
-                                          const SizedBox(width: 7),
-                                          const Flexible(
-                                            child: Text(
-                                              'Recommended',
-                                              overflow: TextOverflow.ellipsis,
-                                              style: TextStyle(
-                                                fontSize: 10,
-                                                color: Garden.green,
-                                              ),
+          body: SafeArea(
+            bottom: false,
+            child: SingleChildScrollView(
+              key: const ValueKey('paywall-content'),
+              padding: const EdgeInsets.fromLTRB(22, 0, 22, 12),
+              child: Column(
+                children: [
+                  GrowingGarden(
+                    size: size.height < 700
+                        ? 100
+                        : compact
+                        ? 145
+                        : 190,
+                  ),
+                  Text(
+                    c.premium
+                        ? 'Your garden is fully unlocked.'
+                        : 'Let your German flourish.',
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.headlineMedium
+                        ?.copyWith(fontSize: compact ? 26 : 29),
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    c.premium
+                        ? 'Every level. Every way to learn.'
+                        : widget.reason ??
+                              'More words. More confidence. Your own path.',
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(fontSize: 12, color: Garden.muted),
+                  ),
+                  const SizedBox(height: 18),
+                  const _Benefit(
+                    Icons.auto_stories_outlined,
+                    'All A1–C1 topics and exam collections',
+                  ),
+                  const _Benefit(
+                    Icons.folder_outlined,
+                    'Your own lists and difficult-word practice',
+                  ),
+                  const _Benefit(
+                    Icons.insights_rounded,
+                    'Detailed progress and learning insights',
+                  ),
+                  const _Benefit(
+                    Icons.offline_bolt_outlined,
+                    'Illustrations and audio, ready offline',
+                  ),
+                  const SizedBox(height: 16),
+                  if (!c.premium)
+                    for (final plan in [
+                      PremiumPlan.monthly,
+                      PremiumPlan.weekly,
+                      PremiumPlan.lifetime,
+                    ])
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 8),
+                        child: Semantics(
+                          selected: _selected == plan,
+                          button: true,
+                          child: GardenCard(
+                            color: _selected == plan
+                                ? Garden.goldLight
+                                : Colors.white,
+                            borderColor: _selected == plan
+                                ? Garden.goldBorder
+                                : Garden.border,
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 14,
+                              vertical: compact ? 10 : 13,
+                            ),
+                            onTap: billing.busy
+                                ? null
+                                : () => setState(() => _selected = plan),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  _selected == plan
+                                      ? Icons.radio_button_checked_rounded
+                                      : Icons.radio_button_off_rounded,
+                                  size: 22,
+                                  color: Garden.goldInk,
+                                ),
+                                const SizedBox(width: 12),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Text(
+                                            plan.label,
+                                            style: const TextStyle(
+                                              fontWeight: FontWeight.w600,
+                                              fontSize: 13,
                                             ),
                                           ),
+                                          if (plan == PremiumPlan.monthly) ...[
+                                            const SizedBox(width: 7),
+                                            const Flexible(
+                                              child: Text(
+                                                'Recommended',
+                                                overflow: TextOverflow.ellipsis,
+                                                style: TextStyle(
+                                                  fontSize: 10,
+                                                  color: Garden.goldInk,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
                                         ],
-                                      ],
-                                    ),
-                                    const SizedBox(height: 3),
-                                    Text(
-                                      plan.subscription
-                                          ? 'Billed every ${plan.period}'
-                                          : 'One payment. Permanent access.',
-                                      style: const TextStyle(
-                                        fontSize: 10,
-                                        color: Garden.muted,
                                       ),
-                                    ),
-                                  ],
+                                      const SizedBox(height: 3),
+                                      Text(
+                                        plan.subscription
+                                            ? 'Billed every ${plan.period}'
+                                            : 'One payment. Permanent access.',
+                                        style: const TextStyle(
+                                          fontSize: 10,
+                                          color: Garden.muted,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
-                              ),
-                              const SizedBox(width: 8),
-                              Text(
-                                billing.offers[plan]?.price ??
-                                    plan.previewPrice,
-                                style: const TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.w700,
+                                const SizedBox(width: 8),
+                                Text(
+                                  billing.offers[plan]?.price ??
+                                      plan.previewPrice,
+                                  style: const TextStyle(
+                                    fontSize: 17,
+                                    fontWeight: FontWeight.w700,
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                if (c.premium)
-                  GardenCard(
-                    color: Garden.mint,
-                    child: Row(
-                      children: [
-                        const Icon(
-                          Icons.check_circle_rounded,
-                          color: Garden.green,
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: Text(
-                            billing.entitlement?.plan == PremiumPlan.lifetime
-                                ? 'Lifetime access'
-                                : 'Your subscription is active',
-                            style: const TextStyle(fontWeight: FontWeight.w600),
+                  if (c.premium)
+                    GardenCard(
+                      color: Garden.goldLight,
+                      child: Row(
+                        children: [
+                          const Icon(
+                            Icons.check_circle_rounded,
+                            color: Garden.goldInk,
                           ),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Text(
+                              billing.entitlement?.plan == PremiumPlan.lifetime
+                                  ? 'Lifetime access'
+                                  : 'Your subscription is active',
+                              style: const TextStyle(
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  if (billing.message != null) ...[
+                    const SizedBox(height: 12),
+                    Semantics(
+                      liveRegion: true,
+                      child: Text(
+                        billing.message!,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontSize: 12,
+                          color: Garden.goldInk,
                         ),
-                      ],
-                    ),
-                  ),
-                if (billing.message != null) ...[
-                  const SizedBox(height: 12),
-                  Semantics(
-                    liveRegion: true,
-                    child: Text(
-                      billing.message!,
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(fontSize: 12, color: Garden.green),
-                    ),
-                  ),
-                ],
-                if (billing.canRetry)
-                  TextButton(
-                    onPressed: billing.retryVerification,
-                    child: const Text('Retry purchase verification'),
-                  ),
-                const SizedBox(height: 8),
-                Wrap(
-                  alignment: WrapAlignment.center,
-                  spacing: 8,
-                  children: [
-                    TextButton(
-                      onPressed: billing.busy ? null : billing.restore,
-                      child: const Text(
-                        'Restore purchases',
-                        style: TextStyle(fontSize: 11),
-                      ),
-                    ),
-                    TextButton(
-                      onPressed: () => _legal(context, 'Privacy'),
-                      child: const Text(
-                        'Privacy',
-                        style: TextStyle(fontSize: 11),
-                      ),
-                    ),
-                    TextButton(
-                      onPressed: () => _legal(context, 'Terms'),
-                      child: const Text(
-                        'Terms',
-                        style: TextStyle(fontSize: 11),
                       ),
                     ),
                   ],
-                ),
-              ],
+                  if (billing.canRetry)
+                    TextButton(
+                      onPressed: billing.retryVerification,
+                      child: const Text('Retry purchase verification'),
+                    ),
+                  const SizedBox(height: 8),
+                  Wrap(
+                    alignment: WrapAlignment.center,
+                    spacing: 8,
+                    children: [
+                      TextButton(
+                        onPressed: billing.busy ? null : billing.restore,
+                        child: const Text(
+                          'Restore purchases',
+                          style: TextStyle(fontSize: 11),
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () => _legal(context, 'Privacy'),
+                        child: const Text(
+                          'Privacy',
+                          style: TextStyle(fontSize: 11),
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () => _legal(context, 'Terms'),
+                        child: const Text(
+                          'Terms',
+                          style: TextStyle(fontSize: 11),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
-        ),
-        bottomNavigationBar: SafeArea(
-          top: false,
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(22, 8, 22, 10),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                if (!c.premium)
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 8),
-                    child: Text(
-                      _selected.subscription
-                          ? '$price per ${_selected.period}. Renews automatically; cancel in your store settings.'
-                          : '$price once. Lifetime access has no recurring charge.',
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(fontSize: 10, color: Garden.muted),
+          bottomNavigationBar: SafeArea(
+            top: false,
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(22, 8, 22, 10),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  if (!c.premium)
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 8),
+                      child: Text(
+                        _selected.subscription
+                            ? '$price per ${_selected.period}. Renews automatically; cancel in your store settings.'
+                            : '$price once. Lifetime access has no recurring charge.',
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontSize: 10,
+                          color: Garden.muted,
+                        ),
+                      ),
                     ),
-                  ),
-                SizedBox(
-                  width: double.infinity,
-                  child: FilledButton(
-                    onPressed: c.premium
-                        ? () async {
-                            if (billing.entitlement?.plan ==
-                                PremiumPlan.lifetime) {
-                              Navigator.pop(context, true);
-                            } else if (!await billing.manage() &&
-                                context.mounted) {
-                              toast(
-                                context,
-                                'Open your app store to manage your subscription.',
-                              );
+                  SizedBox(
+                    width: double.infinity,
+                    child: FilledButton(
+                      onPressed: c.premium
+                          ? () async {
+                              if (billing.entitlement?.plan ==
+                                  PremiumPlan.lifetime) {
+                                Navigator.pop(context, true);
+                              } else if (!await billing.manage() &&
+                                  context.mounted) {
+                                toast(
+                                  context,
+                                  'Open your app store to manage your subscription.',
+                                );
+                              }
                             }
-                          }
-                        : billing.canBuy(_selected)
-                        ? () => billing.buy(_selected)
-                        : null,
-                    child: Text(
-                      c.premium
-                          ? (billing.entitlement?.plan == PremiumPlan.lifetime
-                                ? 'Back to my garden'
-                                : 'Manage subscription')
-                          : billing.busy
-                          ? 'Confirming purchase…'
-                          : billing.loading
-                          ? 'Checking available plans…'
                           : billing.canBuy(_selected)
-                          ? (_selected.subscription
-                                ? 'Subscribe · $price / ${_selected.period}'
-                                : 'Unlock lifetime · $price')
-                          : 'Purchases unavailable right now',
+                          ? () => billing.buy(_selected)
+                          : null,
+                      child: Text(
+                        c.premium
+                            ? (billing.entitlement?.plan == PremiumPlan.lifetime
+                                  ? 'Back to my garden'
+                                  : 'Manage subscription')
+                            : billing.busy
+                            ? 'Confirming purchase…'
+                            : billing.loading
+                            ? 'Checking available plans…'
+                            : billing.canBuy(_selected)
+                            ? (_selected.subscription
+                                  ? 'Subscribe · $price / ${_selected.period}'
+                                  : 'Unlock lifetime · $price')
+                            : 'Purchases unavailable right now',
+                      ),
                     ),
                   ),
-                ),
-                TextButton(
-                  onPressed: () => Navigator.pop(context, c.premium),
-                  child: Text(
-                    c.premium ? 'Back to my garden' : 'Continue free',
+                  TextButton(
+                    onPressed: () => Navigator.pop(context, c.premium),
+                    child: Text(
+                      c.premium ? 'Back to my garden' : 'Continue free',
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),
@@ -440,7 +463,7 @@ class _Benefit extends StatelessWidget {
     padding: const EdgeInsets.only(bottom: 9),
     child: Row(
       children: [
-        Icon(icon, size: 18, color: Garden.green),
+        Icon(icon, size: 18, color: Garden.goldInk),
         const SizedBox(width: 10),
         Expanded(child: Text(text, style: const TextStyle(fontSize: 12))),
       ],

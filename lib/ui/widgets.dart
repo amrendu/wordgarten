@@ -49,10 +49,12 @@ class IconBadge extends StatelessWidget {
     this.icon, {
     super.key,
     this.color = Garden.mint,
+    this.foregroundColor = Garden.green,
     this.size = 42,
   });
   final IconData icon;
   final Color color;
+  final Color foregroundColor;
   final double size;
   @override
   Widget build(BuildContext context) => Container(
@@ -62,7 +64,7 @@ class IconBadge extends StatelessWidget {
       color: color,
       borderRadius: BorderRadius.circular(size * .3),
     ),
-    child: Icon(icon, color: Garden.green, size: size * .52),
+    child: Icon(icon, color: foregroundColor, size: size * .52),
   );
 }
 
@@ -255,11 +257,13 @@ class GardenCard extends StatelessWidget {
     super.key,
     required this.child,
     this.color = Colors.white,
+    this.borderColor = Garden.border,
     this.padding = const EdgeInsets.all(20),
     this.onTap,
   });
   final Widget child;
   final Color color;
+  final Color borderColor;
   final EdgeInsets padding;
   final VoidCallback? onTap;
   @override
@@ -267,7 +271,7 @@ class GardenCard extends StatelessWidget {
     color: color,
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(24),
-      side: const BorderSide(color: Garden.border),
+      side: BorderSide(color: borderColor),
     ),
     clipBehavior: Clip.antiAlias,
     child: InkWell(
@@ -432,7 +436,7 @@ class LessonTile extends StatelessWidget {
               const SizedBox(width: 3),
               const Icon(
                 Icons.lock_outline_rounded,
-                color: Garden.green,
+                color: Garden.goldInk,
                 size: 15,
               ),
             ],

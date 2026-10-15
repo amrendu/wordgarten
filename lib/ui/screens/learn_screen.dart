@@ -324,7 +324,9 @@ class _LearnScreenState extends State<LearnScreen> {
                                   ? Icons.arrow_forward_rounded
                                   : Icons.lock_outline_rounded,
                               size: 15,
-                              color: Garden.green,
+                              color: c.canAccessLesson(lesson)
+                                  ? Garden.green
+                                  : Garden.goldInk,
                             ),
                           ],
                         ),

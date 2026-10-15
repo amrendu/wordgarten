@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/foundation.dart';
 
 import '../models/vocabulary.dart';
+import '../services/app_review_service.dart';
 import '../services/progress_storage.dart';
 import '../services/purchase_service.dart';
 import 'content_access.dart';
@@ -119,10 +120,12 @@ class AppController extends ChangeNotifier {
     required this.catalog,
     required this.storage,
     BillingController? purchases,
+    AppReviewClient? reviews,
     this.disposePurchases = true,
     DateTime Function()? clock,
   }) : clock = clock ?? DateTime.now,
        purchases = purchases ?? PurchasesController.unavailable(),
+       reviews = reviews ?? NativeAppReviewClient(),
        access = ContentAccess(catalog) {
     this.purchases.addListener(_billingChanged);
   }
@@ -130,6 +133,9 @@ class AppController extends ChangeNotifier {
   final ProgressStorage storage;
   final DateTime Function() clock;
   final BillingController purchases;
+  final AppReviewClient reviews;
+  final reviewHistory = AppReviewHistory();
+  bool _requestingReview = false;
   final bool disposePurchases;
   final ContentAccess access;
   final retainedWordIds = <String>{};
@@ -200,6 +206,11 @@ class AppController extends ChangeNotifier {
             .where(catalog.words.containsKey)
             .toSet();
       }
+      reviewHistory.restore(j['appReview'] as Map<String, dynamic>?);
+      // Keep historical study days without changing the existing progress data.
+      reviewHistory.studyDays.addAll(
+        days.entries.where((entry) => entry.value.isNotEmpty).map((e) => e.key),
+      );
       retainedWordIds.addAll(
         List<String>.from(j['retainedWordIds'] ?? [])
             .map(canonicalWordId)
@@ -247,6 +258,7 @@ class AppController extends ChangeNotifier {
     'progress': progress.map((k, v) => MapEntry(k, v.toJson())),
     'days': days.map((k, v) => MapEntry(k, v.toList())),
     'sessions': sessions,
+    'appReview': reviewHistory.toJson(),
     'session': session?.toJson(),
     'reminder': reminder,
     'reminderHour': reminderHour,
@@ -273,6 +285,52 @@ class AppController extends ChangeNotifier {
   }
 
   Future<void> flush() => _pending;
+
+  bool get eligibleForReview =>
+      onboarded &&
+      !_readFailed &&
+      storageError == null &&
+      reviews.supported &&
+      reviewHistory.eligible(clock(), sessions);
+
+  Future<void> requestReviewAfterSession({
+    required bool Function() canPresent,
+  }) async {
+    if (_requestingReview ||
+        session?.complete != true ||
+        !eligibleForReview ||
+        !canPresent()) {
+      return;
+    }
+    _requestingReview = true;
+    try {
+      if (!await reviews.isAvailable() || !eligibleForReview || !canPresent()) {
+        return;
+      }
+      // Save before calling the OS: it may silently suppress its dialog.
+      reviewHistory.attempts.add(clock());
+      changed();
+      await flush();
+      if (storageError == null && canPresent()) await reviews.requestReview();
+    } catch (_) {
+      // Reviews must never interrupt learning or open the store automatically.
+    } finally {
+      _requestingReview = false;
+    }
+  }
+
+  Future<bool> openStoreReview() async {
+    if (!reviews.supported) return false;
+    try {
+      await reviews.openStoreListing();
+      reviewHistory.lastStoreVisit = clock();
+      changed();
+      return true;
+    } catch (_) {
+      return false;
+    }
+  }
+
   void refreshForClock() => notifyListeners();
   Future<void> retryStorage() async {
     if (_readFailed) {
@@ -442,6 +500,7 @@ class AppController extends ChangeNotifier {
   }
 
   void _recordAnswer(String id, bool success, {required bool recall}) {
+    reviewHistory.studyDays.add(dayKey(clock()));
     final p = progress.putIfAbsent(id, WordProgress.new);
     p.reviewed = true;
     if (recall) {

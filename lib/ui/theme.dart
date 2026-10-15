@@ -5,6 +5,29 @@ abstract final class Garden {
   static const ink = Color(0xFF263F34);
   static const muted = Color(0xFF7A857C);
   static const green = Color(0xFF477357);
+  static const gold = Color(0xFFE7B849);
+  static const goldLight = Color(0xFFFFF3CE);
+  static const goldInk = Color(0xFF5F400D);
+  static const goldBorder = Color(0xFFE3C46C);
+
+  static ThemeData premiumTheme(ThemeData base) => base.copyWith(
+    colorScheme: base.colorScheme.copyWith(primary: goldInk),
+    filledButtonTheme: FilledButtonThemeData(
+      style: base.filledButtonTheme.style?.copyWith(
+        backgroundColor: WidgetStateProperty.resolveWith(
+          (states) => states.contains(WidgetState.disabled) ? goldLight : gold,
+        ),
+        foregroundColor: WidgetStateProperty.resolveWith(
+          (states) => states.contains(WidgetState.disabled)
+              ? goldInk.withValues(alpha: .55)
+              : goldInk,
+        ),
+      ),
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(foregroundColor: goldInk),
+    ),
+  );
   static const mint = Color(0xFFE6F0E5);
   static const peach = Color(0xFFF7EADB);
   static const lavender = Color(0xFFEDE9F6);

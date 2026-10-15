@@ -5,6 +5,7 @@ import '../../state/app_controller.dart';
 import '../theme.dart';
 import '../widgets.dart';
 import '../infographics.dart';
+import '../app_review_link.dart';
 import 'lesson_screen.dart';
 import 'practice_screen.dart';
 
@@ -488,6 +489,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
         const SizedBox(height: 20),
+        AppReviewLink(key: const ValueKey('home-rate-app'), controller: c),
         const LearningCycle(),
         const SizedBox(height: 18),
         const Center(

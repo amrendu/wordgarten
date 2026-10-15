@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -142,6 +143,8 @@ class _PracticeScreenState extends State<PracticeScreen>
   final _focus = FocusNode();
   int _autoplayEpoch = 0;
   String? _spokenFlashcard;
+  Timer? _reviewTimer;
+  StudySession? _reviewSession;
   bool _foreground = true;
   bool _autoplay = false, _hint = false;
   bool _keyboardOpen = false;
@@ -161,6 +164,7 @@ class _PracticeScreenState extends State<PracticeScreen>
     WidgetsBinding.instance.addObserver(this);
     c.addListener(_accessChanged);
     _queueFlashcardAudio();
+    _queueReviewPrompt();
     if (_autoplay) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (mounted && _foreground) _schedule();
@@ -177,6 +181,30 @@ class _PracticeScreenState extends State<PracticeScreen>
       return;
     }
     _queueFlashcardAudio();
+    _queueReviewPrompt();
+  }
+
+  void _queueReviewPrompt() {
+    final session = c.session;
+    if (!_foreground ||
+        session == null ||
+        !session.complete ||
+        !c.eligibleForReview ||
+        identical(_reviewSession, session)) {
+      return;
+    }
+    _reviewSession = session;
+    _reviewTimer?.cancel();
+    _reviewTimer = Timer(const Duration(seconds: 2), () {
+      _reviewTimer = null;
+      bool canPresent() =>
+          mounted &&
+          _foreground &&
+          ModalRoute.of(context)?.isCurrent == true &&
+          identical(c.session, session) &&
+          session.complete;
+      unawaited(c.requestReviewAfterSession(canPresent: canPresent));
+    });
   }
 
   void _queueFlashcardAudio() {
@@ -207,6 +235,7 @@ class _PracticeScreenState extends State<PracticeScreen>
 
   @override
   void dispose() {
+    _reviewTimer?.cancel();
     _autoplayEpoch++;
     _speech.stop();
     _input.dispose();
@@ -220,9 +249,16 @@ class _PracticeScreenState extends State<PracticeScreen>
   void didChangeAppLifecycleState(AppLifecycleState state) {
     _foreground = state == AppLifecycleState.resumed;
     if (state != AppLifecycleState.resumed) {
+      if (_reviewTimer != null) {
+        _reviewTimer!.cancel();
+        _reviewTimer = null;
+        _reviewSession = null;
+      }
       _autoplayEpoch++;
       _speech.stop();
       if (mounted) setState(() => _autoplay = false);
+    } else {
+      _queueReviewPrompt();
     }
   }
 
